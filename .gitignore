@@ -1,4 +1,6 @@
-.pyc
-.pth
-.out
-.txt
+*.pyc
+*.pth
+*.out
+*.txt
+*.gitignore
+!.gitignore
