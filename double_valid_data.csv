@@ -1,0 +1,538 @@
+ID,Patient Age,Patient Sex,Left-Fundus,Right-Fundus,Left-Diagnostic Keywords,Right-Diagnostic Keywords,N,D,G,C,A,H,M,O
+0,69,Female,0_left.jpg,0_right.jpg,C,N,0,0,0,1,0,0,0,0
+100,59,Male,100_left.jpg,100_right.jpg,macular epiretinal membrane,N,0,0,0,0,0,0,0,1
+101,45,Female,101_left.jpg,101_right.jpg,drusen,drusen,0,0,0,0,0,0,0,1
+102,73,Female,102_left.jpg,102_right.jpg,A,A,0,0,0,0,1,0,0,0
+103,55,Female,103_left.jpg,103_right.jpg,C,N,0,0,0,1,0,0,0,0
+104,63,Male,104_left.jpg,104_right.jpg,optic disc edema,optic disc edema,0,0,0,0,0,0,0,1
+105,61,Female,105_left.jpg,105_right.jpg,epiretinal membrane,N,0,0,0,0,0,0,0,1
+106,57,Female,106_left.jpg,106_right.jpg,M,M,0,0,0,0,0,0,1,0
+107,68,Female,107_left.jpg,107_right.jpg,N,D，epiretinal membrane,0,1,0,0,0,0,0,1
+108,54,Female,108_left.jpg,108_right.jpg,retinal pigment epithelium atrophy，diabetic retinopathy,N,0,1,0,0,0,0,0,1
+109,67,Male,109_left.jpg,109_right.jpg,depigmentation of the retinal pigment epithelium,depigmentation of the retinal pigment epithelium,0,0,0,0,0,0,0,1
+110,69,Male,110_left.jpg,110_right.jpg,macular epiretinal membrane,N,0,0,0,0,0,0,0,1
+111,64,Male,111_left.jpg,111_right.jpg,severe nonproliferative retinopathy，white vessel,D，white vessel,0,1,0,0,0,0,0,1
+112,57,Female,112_left.jpg,112_right.jpg,N,C,0,0,0,1,0,0,0,0
+113,67,Female,113_left.jpg,113_right.jpg,D，epiretinal membrane,epiretinal membrane,0,1,0,0,0,0,0,1
+114,48,Male,114_left.jpg,114_right.jpg,spotted membranous change，spotted membranous change,N,0,0,0,0,0,0,0,1
+115,66,Female,115_left.jpg,115_right.jpg,vitreous degeneration,N,0,0,0,0,0,0,0,1
+116,61,Male,116_left.jpg,116_right.jpg,H,H,0,0,0,0,0,1,0,0
+117,65,Female,117_left.jpg,117_right.jpg,N,epiretinal membrane,0,0,0,0,0,0,0,1
+118,48,Male,118_left.jpg,118_right.jpg,D，myelinated nerve fibers,D,0,1,0,0,0,0,0,1
+119,59,Male,119_left.jpg,119_right.jpg,C,drusen,0,0,0,1,0,0,0,1
+120,43,Male,120_left.jpg,120_right.jpg,proliferative diabetic retinopathy，H,proliferative diabetic retinopathy，H,0,1,0,0,0,1,0,0
+121,47,Female,121_left.jpg,121_right.jpg,epiretinal membrane，mild nonproliferative retinopathy,N,0,1,0,0,0,0,0,1
+122,50,Female,122_left.jpg,122_right.jpg,drusen，lens dust,N,0,0,0,0,0,0,0,1
+123,72,Female,123_left.jpg,123_right.jpg,macular epiretinal membrane,mild nonproliferative retinopathy,0,1,0,0,0,0,0,1
+124,68,Female,124_left.jpg,124_right.jpg,N,lens dust，myelinated nerve fibers,0,0,0,0,0,0,0,1
+125,71,Male,125_left.jpg,125_right.jpg,epiretinal membrane,N,0,0,0,0,0,0,0,1
+126,66,Male,126_left.jpg,126_right.jpg,A,A,0,0,0,0,1,0,0,0
+127,52,Male,127_left.jpg,127_right.jpg,proliferative diabetic retinopathy，H,proliferative diabetic retinopathy，H,0,1,0,0,0,1,0,0
+128,67,Male,128_left.jpg,128_right.jpg,N,epiretinal membrane,0,0,0,0,0,0,0,1
+129,62,Female,129_left.jpg,129_right.jpg,myelinated nerve fibers,N,0,0,0,0,0,0,0,1
+130,66,Female,130_left.jpg,130_right.jpg,macular epiretinal membrane，D,macular epiretinal membrane，mild nonproliferative retinopathy,0,1,0,0,0,0,0,1
+131,64,Female,131_left.jpg,131_right.jpg,retinitis pigmentosa,retinitis pigmentosa,0,0,0,0,0,0,0,1
+132,63,Female,132_left.jpg,132_right.jpg,N,vitreous degeneration,0,0,0,0,0,0,0,1
+133,59,Female,133_left.jpg,133_right.jpg,D，epiretinal membrane,D,0,1,0,0,0,0,0,1
+134,56,Male,134_left.jpg,134_right.jpg,epiretinal membrane,macular epiretinal membrane,0,0,0,0,0,0,0,1
+135,41,Male,135_left.jpg,135_right.jpg,drusen,drusen,0,0,0,0,0,0,0,1
+136,75,Female,136_left.jpg,136_right.jpg,wet age-related macular degeneration,refractive media opacity,0,0,0,0,1,0,0,1
+137,44,Male,137_left.jpg,137_right.jpg,N,D，epiretinal membrane,0,1,0,0,0,0,0,1
+138,59,Female,138_left.jpg,138_right.jpg,epiretinal membrane,spotted membranous change,0,0,0,0,0,0,0,1
+139,41,Male,139_left.jpg,139_right.jpg,severe nonproliferative retinopathy，H,severe nonproliferative retinopathy，H,0,1,0,0,0,1,0,0
+140,44,Male,140_left.jpg,140_right.jpg,N,macular epiretinal membrane,0,0,0,0,0,0,0,1
+141,32,Male,141_left.jpg,141_right.jpg,retinal pigmentation,N,0,0,0,0,0,0,0,1
+142,72,Female,142_left.jpg,142_right.jpg,drusen,drusen,0,0,0,0,0,0,0,1
+143,54,Male,143_left.jpg,143_right.jpg,N,macular epiretinal membrane,0,0,0,0,0,0,0,1
+144,49,Female,144_left.jpg,144_right.jpg,M,N,0,0,0,0,0,0,1,0
+145,50,Male,145_left.jpg,145_right.jpg,M,M,0,0,0,0,0,0,1,0
+146,57,Female,146_left.jpg,146_right.jpg,N,myelinated nerve fibers,0,0,0,0,0,0,0,1
+147,46,Male,147_left.jpg,147_right.jpg,N,chorioretinal atrophy,0,0,0,0,0,0,0,1
+148,70,Female,148_left.jpg,148_right.jpg,vitreous degeneration,D,0,1,0,0,0,0,0,1
+149,57,Female,149_left.jpg,149_right.jpg,N,epiretinal membrane,0,0,0,0,0,0,0,1
+150,62,Male,150_left.jpg,150_right.jpg,macular epiretinal membrane,N,0,0,0,0,0,0,0,1
+151,48,Male,151_left.jpg,151_right.jpg,N,white vessel，proliferative diabetic retinopathy，suspected microvascular anomalies,0,1,0,0,0,0,0,1
+152,55,Male,152_left.jpg,152_right.jpg,wet age-related macular degeneration,A,0,0,0,0,1,0,0,0
+153,79,Male,153_left.jpg,153_right.jpg,G,A,0,0,1,0,1,0,0,0
+154,67,Female,154_left.jpg,154_right.jpg,vitreous degeneration，lens dust,lens dust，N,0,0,0,0,0,0,0,1
+155,40,Male,155_left.jpg,155_right.jpg,N,retinal pigmentation,0,0,0,0,0,0,0,1
+156,82,Female,156_left.jpg,156_right.jpg,refractive media opacity,macular epiretinal membrane,0,0,0,0,0,0,0,1
+157,65,Female,157_left.jpg,157_right.jpg,D,D,0,1,0,0,0,0,0,0
+158,61,Male,158_left.jpg,158_right.jpg,A,A,0,0,0,0,1,0,0,0
+159,69,Female,159_left.jpg,159_right.jpg,mild nonproliferative retinopathy，epiretinal membrane,N,0,1,0,0,0,0,0,1
+160,40,Female,160_left.jpg,160_right.jpg,N,wet age-related macular degeneration,0,0,0,0,1,0,0,0
+161,49,Male,161_left.jpg,161_right.jpg,mild nonproliferative retinopathy，myelinated nerve fibers,mild nonproliferative retinopathy,0,1,0,0,0,0,0,1
+162,76,Female,162_left.jpg,162_right.jpg,A,A,0,0,0,0,1,0,0,0
+163,61,Female,163_left.jpg,163_right.jpg,mild nonproliferative retinopathy,macular epiretinal membrane,0,1,0,0,0,0,0,1
+164,62,Female,164_left.jpg,164_right.jpg,A,A,0,0,0,0,1,0,0,0
+165,48,Male,165_left.jpg,165_right.jpg,drusen,N,0,0,0,0,0,0,0,1
+166,65,Female,166_left.jpg,166_right.jpg,N,vitreous degeneration,0,0,0,0,0,0,0,1
+167,71,Male,167_left.jpg,167_right.jpg,G,G,0,0,1,0,0,0,0,0
+168,66,Male,168_left.jpg,168_right.jpg,A,A,0,0,0,0,1,0,0,0
+169,64,Female,169_left.jpg,169_right.jpg,D，epiretinal membrane,macular epiretinal membrane，D,0,1,0,0,0,0,0,1
+1005,78,Female,1005_left.jpg,1005_right.jpg,macular hole,N,0,0,0,0,0,0,0,1
+1006,64,Male,1006_left.jpg,1006_right.jpg,N,macular epiretinal membrane,0,0,0,0,0,0,0,1
+1008,65,Male,1008_left.jpg,1008_right.jpg,N,epiretinal membrane,0,0,0,0,0,0,0,1
+1010,63,Female,1010_left.jpg,1010_right.jpg,N,drusen,0,0,0,0,0,0,0,1
+1011,36,Male,1011_left.jpg,1011_right.jpg,N,drusen,0,0,0,0,0,0,0,1
+1012,56,Female,1012_left.jpg,1012_right.jpg,drusen,M,0,0,0,0,0,0,1,1
+1013,66,Female,1013_left.jpg,1013_right.jpg,N,macular epiretinal membrane，drusen,0,0,0,0,0,0,0,1
+1014,70,Female,1014_left.jpg,1014_right.jpg,retinal pigmentation,N,0,0,0,0,0,0,0,1
+1015,53,Female,1015_left.jpg,1015_right.jpg,drusen,drusen,0,0,0,0,0,0,0,1
+1016,62,Female,1016_left.jpg,1016_right.jpg,N,epiretinal membrane,0,0,0,0,0,0,0,1
+1017,60,Male,1017_left.jpg,1017_right.jpg,lens dust，N,lens dust，epiretinal membrane，N,0,0,0,0,0,0,0,1
+1018,69,Male,1018_left.jpg,1018_right.jpg,laser spot，branch retinal vein occlusion,N,0,0,0,0,0,0,0,1
+1019,80,Female,1019_left.jpg,1019_right.jpg,refractive media opacity,N,0,0,0,0,0,0,0,1
+1020,67,Male,1020_left.jpg,1020_right.jpg,G，intraretinal hemorrhage,myopia retinopathy,0,0,1,0,0,0,1,1
+1021,64,Female,1021_left.jpg,1021_right.jpg,N,macular epiretinal membrane,0,0,0,0,0,0,0,1
+1022,37,Male,1022_left.jpg,1022_right.jpg,D,D,0,1,0,0,0,0,0,0
+1023,67,Female,1023_left.jpg,1023_right.jpg,N,epiretinal membrane over the macula,0,0,0,0,0,0,0,1
+1024,60,Male,1024_left.jpg,1024_right.jpg,H,H，mild nonproliferative retinopathy,0,1,0,0,0,1,0,0
+1028,50,Female,1028_left.jpg,1028_right.jpg,branch retinal vein occlusion,N,0,0,0,0,0,0,0,1
+1031,53,Male,1031_left.jpg,1031_right.jpg,drusen,H,0,0,0,0,0,1,0,1
+1032,67,Female,1032_left.jpg,1032_right.jpg,N,macular epiretinal membrane,0,0,0,0,0,0,0,1
+1033,54,Male,1033_left.jpg,1033_right.jpg,lens dust，N,myelinated nerve fibers,0,0,0,0,0,0,0,1
+1034,56,Male,1034_left.jpg,1034_right.jpg,N,N,1,0,0,0,0,0,0,0
+1035,53,Male,1035_left.jpg,1035_right.jpg,N,mild nonproliferative retinopathy,0,1,0,0,0,0,0,0
+1036,62,Male,1036_left.jpg,1036_right.jpg,lens dust，N,pigmentation disorder,0,0,0,0,0,0,0,1
+1038,54,Female,1038_left.jpg,1038_right.jpg,N,macular epiretinal membrane,0,0,0,0,0,0,0,1
+1039,82,Female,1039_left.jpg,1039_right.jpg,epiretinal membrane,N,0,0,0,0,0,0,0,1
+1040,65,Male,1040_left.jpg,1040_right.jpg,myelinated nerve fibers,N,0,0,0,0,0,0,0,1
+1041,71,Female,1041_left.jpg,1041_right.jpg,N,myelinated nerve fibers,0,0,0,0,0,0,0,1
+1043,57,Female,1043_left.jpg,1043_right.jpg,A,wet age-related macular degeneration,0,0,0,0,1,0,0,0
+1045,51,Male,1045_left.jpg,1045_right.jpg,H,H,0,0,0,0,0,1,0,0
+1046,55,Male,1046_left.jpg,1046_right.jpg,H,H,0,0,0,0,0,1,0,0
+1048,60,Female,1048_left.jpg,1048_right.jpg,H,H,0,0,0,0,0,1,0,0
+1050,60,Female,1050_left.jpg,1050_right.jpg,drusen,drusen,0,0,0,0,0,0,0,1
+1052,71,Female,1052_left.jpg,1052_right.jpg,refractive media opacity,refractive media opacity,0,0,0,0,0,0,0,1
+1053,33,Female,1053_left.jpg,1053_right.jpg,N,myelinated nerve fibers,0,0,0,0,0,0,0,1
+1054,59,Male,1054_left.jpg,1054_right.jpg,N,N,1,0,0,0,0,0,0,0
+1056,62,Male,1056_left.jpg,1056_right.jpg,H,H，macular epiretinal membrane,0,0,0,0,0,1,0,1
+1058,28,Female,1058_left.jpg,1058_right.jpg,N,maculopathy,0,0,0,0,0,0,0,1
+1059,43,Male,1059_left.jpg,1059_right.jpg,maculopathy,N,0,0,0,0,0,0,0,1
+1060,54,Male,1060_left.jpg,1060_right.jpg,N,N,1,0,0,0,0,0,0,0
+1061,49,Female,1061_left.jpg,1061_right.jpg,white vessel，arteriosclerosis,N,0,0,0,0,0,0,0,1
+1062,61,Female,1062_left.jpg,1062_right.jpg,lens dust，N,C,0,0,0,1,0,0,0,0
+1064,61,Male,1064_left.jpg,1064_right.jpg,A,A,0,0,0,0,1,0,0,0
+1065,75,Male,1065_left.jpg,1065_right.jpg,A,myopia retinopathy,0,0,0,0,1,0,1,0
+1066,62,Male,1066_left.jpg,1066_right.jpg,silicone oil eye,N,0,0,0,0,0,0,0,1
+1068,59,Male,1068_left.jpg,1068_right.jpg,D,D,0,1,0,0,0,0,0,0
+1071,52,Male,1071_left.jpg,1071_right.jpg,D,mild nonproliferative retinopathy,0,1,0,0,0,0,0,0
+1072,54,Female,1072_left.jpg,1072_right.jpg,N,N,1,0,0,0,0,0,0,0
+1074,67,Female,1074_left.jpg,1074_right.jpg,macular epiretinal membrane,N,0,0,0,0,0,0,0,1
+1075,67,Male,1075_left.jpg,1075_right.jpg,wet age-related macular degeneration,N,0,0,0,0,1,0,0,0
+1077,79,Female,1077_left.jpg,1077_right.jpg,lens dust，N,drusen,0,0,0,0,0,0,0,1
+1079,64,Female,1079_left.jpg,1079_right.jpg,epiretinal membrane,epiretinal membrane,0,0,0,0,0,0,0,1
+1080,60,Female,1080_left.jpg,1080_right.jpg,macular epiretinal membrane,N,0,0,0,0,0,0,0,1
+1081,47,Female,1081_left.jpg,1081_right.jpg,H,H,0,0,0,0,0,1,0,0
+1082,48,Male,1082_left.jpg,1082_right.jpg,D,D,0,1,0,0,0,0,0,0
+1083,55,Female,1083_left.jpg,1083_right.jpg,C，D,D,0,1,0,1,0,0,0,0
+1084,60,Male,1084_left.jpg,1084_right.jpg,D,C，mild nonproliferative retinopathy,0,1,0,1,0,0,0,0
+1085,32,Male,1085_left.jpg,1085_right.jpg,A,A,0,0,0,0,1,0,0,0
+1086,62,Male,1086_left.jpg,1086_right.jpg,N,macular epiretinal membrane,0,0,0,0,0,0,0,1
+1087,37,Male,1087_left.jpg,1087_right.jpg,central retinal vein occlusion，optic disc edema,central retinal vein occlusion，optic disc edema,0,0,0,0,0,0,0,1
+1089,56,Female,1089_left.jpg,1089_right.jpg,N,retinal vascular sheathing,0,0,0,0,0,0,0,1
+1090,55,Male,1090_left.jpg,1090_right.jpg,branch retinal vein occlusion,N,0,0,0,0,0,0,0,1
+1091,70,Female,1091_left.jpg,1091_right.jpg,A,A,0,0,0,0,1,0,0,0
+1092,68,Female,1092_left.jpg,1092_right.jpg,N,epiretinal membrane,0,0,0,0,0,0,0,1
+1093,53,Male,1093_left.jpg,1093_right.jpg,macular epiretinal membrane,N,0,0,0,0,0,0,0,1
+1094,49,Male,1094_left.jpg,1094_right.jpg,D,D,0,1,0,0,0,0,0,0
+1095,56,Male,1095_left.jpg,1095_right.jpg,branch retinal vein occlusion,lens dust，N,0,0,0,0,0,0,0,1
+1096,59,Female,1096_left.jpg,1096_right.jpg,N,lens dust，drusen,0,0,0,0,0,0,0,1
+1097,59,Male,1097_left.jpg,1097_right.jpg,N,epiretinal membrane,0,0,0,0,0,0,0,1
+1098,66,Male,1098_left.jpg,1098_right.jpg,A,A,0,0,0,0,1,0,0,0
+1099,57,Female,1099_left.jpg,1099_right.jpg,macular epiretinal membrane,macular epiretinal membrane,0,0,0,0,0,0,0,1
+1101,68,Female,1101_left.jpg,1101_right.jpg,lens dust，N,lens dust，C,0,0,0,1,0,0,0,0
+1102,56,Male,1102_left.jpg,1102_right.jpg,C,C,0,0,0,1,0,0,0,0
+1103,29,Male,1103_left.jpg,1103_right.jpg,M,M,0,0,0,0,0,0,1,0
+1104,66,Female,1104_left.jpg,1104_right.jpg,A,A,0,0,0,0,1,0,0,0
+1106,64,Male,1106_left.jpg,1106_right.jpg,D,D,0,1,0,0,0,0,0,0
+1109,60,Male,1109_left.jpg,1109_right.jpg,N,maculopathy,0,0,0,0,0,0,0,1
+1111,65,Female,1111_left.jpg,1111_right.jpg,A,A,0,0,0,0,1,0,0,0
+1113,56,Female,1113_left.jpg,1113_right.jpg,N,mild nonproliferative retinopathy,0,1,0,0,0,0,0,0
+1114,67,Male,1114_left.jpg,1114_right.jpg,refractive media opacity,N,0,0,0,0,0,0,0,1
+1115,81,Female,1115_left.jpg,1115_right.jpg,C,N,0,0,0,1,0,0,0,0
+1116,23,Male,1116_left.jpg,1116_right.jpg,idiopathic choroidal neovascularization,maculopathy,0,0,0,0,0,0,0,1
+1117,65,Male,1117_left.jpg,1117_right.jpg,N,maculopathy,0,0,0,0,0,0,0,1
+1118,47,Female,1118_left.jpg,1118_right.jpg,N,maculopathy,0,0,0,0,0,0,0,1
+1119,65,Male,1119_left.jpg,1119_right.jpg,epiretinal membrane，chorioretinal atrophy,N,0,0,0,0,0,0,0,1
+1120,55,Male,1120_left.jpg,1120_right.jpg,N,macular epiretinal membrane,0,0,0,0,0,0,0,1
+1121,47,Female,1121_left.jpg,1121_right.jpg,lens dust，drusen,N,0,0,0,0,0,0,0,1
+1122,65,Female,1122_left.jpg,1122_right.jpg,macular epiretinal membrane,N,0,0,0,0,0,0,0,1
+1123,51,Female,1123_left.jpg,1123_right.jpg,N,atrophic change,0,0,0,0,0,0,0,1
+1124,63,Male,1124_left.jpg,1124_right.jpg,vitreous degeneration,N,0,0,0,0,0,0,0,1
+1125,37,Female,1125_left.jpg,1125_right.jpg,A,A,0,0,0,0,1,0,0,0
+1126,64,Female,1126_left.jpg,1126_right.jpg,N,C,0,0,0,1,0,0,0,0
+1127,56,Male,1127_left.jpg,1127_right.jpg,lens dust，drusen,drusen,0,0,0,0,0,0,0,1
+1129,69,Female,1129_left.jpg,1129_right.jpg,vitreous degeneration,N,0,0,0,0,0,0,0,1
+1130,60,Female,1130_left.jpg,1130_right.jpg,spotted membranous change,N,0,0,0,0,0,0,0,1
+1131,56,Male,1131_left.jpg,1131_right.jpg,lens dust，epiretinal membrane,lens dust，N,0,0,0,0,0,0,0,1
+1132,56,Male,1132_left.jpg,1132_right.jpg,N,vitreous degeneration,0,0,0,0,0,0,0,1
+1133,56,Male,1133_left.jpg,1133_right.jpg,myelinated nerve fibers,N,0,0,0,0,0,0,0,1
+1134,74,Male,1134_left.jpg,1134_right.jpg,lens dust，spotted membranous change,lens dust，N,0,0,0,0,0,0,0,1
+1136,67,Female,1136_left.jpg,1136_right.jpg,D,D,0,1,0,0,0,0,0,0
+1137,60,Female,1137_left.jpg,1137_right.jpg,N，lens dust,lens dust，chorioretinal atrophy,0,0,0,0,0,0,0,1
+1138,46,Male,1138_left.jpg,1138_right.jpg,D,D,0,1,0,0,0,0,0,0
+1140,43,Female,1140_left.jpg,1140_right.jpg,lens dust，N,lens dust，epiretinal membrane,0,0,0,0,0,0,0,1
+1142,60,Female,1142_left.jpg,1142_right.jpg,optic disc edema,N,0,0,0,0,0,0,0,1
+1143,45,Male,1143_left.jpg,1143_right.jpg,myelinated nerve fibers,N,0,0,0,0,0,0,0,1
+1144,60,Male,1144_left.jpg,1144_right.jpg,C,C，D,0,1,0,1,0,0,0,0
+1145,40,Female,1145_left.jpg,1145_right.jpg,retinal pigmentation,N,0,0,0,0,0,0,0,1
+1146,59,Female,1146_left.jpg,1146_right.jpg,drusen,N,0,0,0,0,0,0,0,1
+1147,65,Female,1147_left.jpg,1147_right.jpg,D,D,0,1,0,0,0,0,0,0
+1148,57,Male,1148_left.jpg,1148_right.jpg,laser spot,macular epiretinal membrane，atrophic change,0,0,0,0,0,0,0,1
+1150,71,Male,1150_left.jpg,1150_right.jpg,M,M,0,0,0,0,0,0,1,0
+1151,60,Male,1151_left.jpg,1151_right.jpg,N,epiretinal membrane,0,0,0,0,0,0,0,1
+1152,54,Female,1152_left.jpg,1152_right.jpg,D,D,0,1,0,0,0,0,0,0
+1153,65,Female,1153_left.jpg,1153_right.jpg,severe nonproliferative retinopathy,severe nonproliferative retinopathy,0,1,0,0,0,0,0,0
+1154,43,Female,1154_left.jpg,1154_right.jpg,A,A,0,0,0,0,1,0,0,0
+1156,65,Male,1156_left.jpg,1156_right.jpg,drusen,retinal pigmentation,0,0,0,0,0,0,0,1
+1157,68,Male,1157_left.jpg,1157_right.jpg,D,D,0,1,0,0,0,0,0,0
+1160,69,Female,1160_left.jpg,1160_right.jpg,N,macular epiretinal membrane,0,0,0,0,0,0,0,1
+1162,67,Male,1162_left.jpg,1162_right.jpg,N,retina fold,0,0,0,0,0,0,0,1
+1163,66,Male,1163_left.jpg,1163_right.jpg,central retinal vein occlusion,central retinal vein occlusion,0,0,0,0,0,0,0,1
+1164,67,Female,1164_left.jpg,1164_right.jpg,C,N,0,0,0,1,0,0,0,0
+1165,44,Male,1165_left.jpg,1165_right.jpg,N,myelinated nerve fibers,0,0,0,0,0,0,0,1
+1166,59,Female,1166_left.jpg,1166_right.jpg,N,maculopathy,0,0,0,0,0,0,0,1
+1167,64,Male,1167_left.jpg,1167_right.jpg,D,D，C,0,1,0,1,0,0,0,0
+1168,67,Female,1168_left.jpg,1168_right.jpg,N,wet age-related macular degeneration,0,0,0,0,1,0,0,0
+1169,26,Female,1169_left.jpg,1169_right.jpg,maculopathy,N,0,0,0,0,0,0,0,1
+1170,56,Male,1170_left.jpg,1170_right.jpg,drusen,drusen,0,0,0,0,0,0,0,1
+1171,74,Female,1171_left.jpg,1171_right.jpg,macular epiretinal membrane,N,0,0,0,0,0,0,0,1
+1172,65,Female,1172_left.jpg,1172_right.jpg,vitreous degeneration,N,0,0,0,0,0,0,0,1
+1173,59,Female,1173_left.jpg,1173_right.jpg,vitreous degeneration,N,0,0,0,0,0,0,0,1
+1174,71,Female,1174_left.jpg,1174_right.jpg,epiretinal membrane,refractive media opacity,0,0,0,0,0,0,0,1
+1176,65,Female,1176_left.jpg,1176_right.jpg,N,macular epiretinal membrane,0,0,0,0,0,0,0,1
+1177,63,Female,1177_left.jpg,1177_right.jpg,depigmentation of the retinal pigment epithelium,N,0,0,0,0,0,0,0,1
+1186,54,Female,1186_left.jpg,1186_right.jpg,macular epiretinal membrane,N,0,0,0,0,0,0,0,1
+1191,58,Male,1191_left.jpg,1191_right.jpg,A，diabetic retinopathy,N,0,1,0,0,1,0,0,0
+1195,62,Female,1195_left.jpg,1195_right.jpg,macular epiretinal membrane,N,0,0,0,0,0,0,0,1
+1196,67,Male,1196_left.jpg,1196_right.jpg,A,A,0,0,0,0,1,0,0,0
+1197,54,Female,1197_left.jpg,1197_right.jpg,A,A,0,0,0,0,1,0,0,0
+1198,44,Female,1198_left.jpg,1198_right.jpg,epiretinal membrane,N,0,0,0,0,0,0,0,1
+1200,55,Female,1200_left.jpg,1200_right.jpg,N,epiretinal membrane,0,0,0,0,0,0,0,1
+1202,42,Female,1202_left.jpg,1202_right.jpg,A，choroidal nevus,A,0,0,0,0,1,0,0,1
+1205,58,Female,1205_left.jpg,1205_right.jpg,D,D,0,1,0,0,0,0,0,0
+1206,54,Male,1206_left.jpg,1206_right.jpg,mild nonproliferative retinopathy,M,0,1,0,0,0,0,1,0
+1207,61,Female,1207_left.jpg,1207_right.jpg,macular epiretinal membrane,N,0,0,0,0,0,0,0,1
+1208,68,Female,1208_left.jpg,1208_right.jpg,white vessel，laser spot,suspected retinitis pigmentosa,0,0,0,0,0,0,0,1
+1210,62,Male,1210_left.jpg,1210_right.jpg,G,G,0,0,1,0,0,0,0,0
+1211,80,Male,1211_left.jpg,1211_right.jpg,G，optic nerve atrophy,G，optic nerve atrophy,0,0,1,0,0,0,0,1
+1212,73,Female,1212_left.jpg,1212_right.jpg,G,G,0,0,1,0,0,0,0,0
+1213,76,Male,1213_left.jpg,1213_right.jpg,G，myopia retinopathy,G，myopia retinopathy,0,0,1,0,0,0,1,0
+1214,70,Female,1214_left.jpg,1214_right.jpg,G，macular epiretinal membrane,G,0,0,1,0,0,0,0,1
+1215,68,Male,1215_left.jpg,1215_right.jpg,G,G,0,0,1,0,0,0,0,0
+1216,45,Male,1216_left.jpg,1216_right.jpg,G,G,0,0,1,0,0,0,0,0
+1217,70,Male,1217_left.jpg,1217_right.jpg,G,G,0,0,1,0,0,0,0,0
+1218,68,Female,1218_left.jpg,1218_right.jpg,G,G,0,0,1,0,0,0,0,0
+1219,72,Female,1219_left.jpg,1219_right.jpg,M,refractive media opacity,0,0,0,0,0,0,1,1
+1220,58,Female,1220_left.jpg,1220_right.jpg,G,G,0,0,1,0,0,0,0,0
+1221,70,Male,1221_left.jpg,1221_right.jpg,G，macular epiretinal membrane,G，old central retinal vein occlusion,0,0,1,0,0,0,0,1
+1222,59,Male,1222_left.jpg,1222_right.jpg,G,G,0,0,1,0,0,0,0,0
+1225,39,Male,1225_left.jpg,1225_right.jpg,G，myopia retinopathy,G，myopia retinopathy,0,0,1,0,0,0,1,0
+1226,74,Female,1226_left.jpg,1226_right.jpg,G,G,0,0,1,0,0,0,0,0
+1227,62,Female,1227_left.jpg,1227_right.jpg,G,G,0,0,1,0,0,0,0,0
+1228,67,Male,1228_left.jpg,1228_right.jpg,G，diabetic retinopathy,optic disk photographically invisible，diabetic retinopathy,0,1,1,0,0,0,0,0
+1229,66,Male,1229_left.jpg,1229_right.jpg,G,G,0,0,1,0,0,0,0,0
+1230,52,Male,1230_left.jpg,1230_right.jpg,G，diabetic retinopathy,G，diabetic retinopathy,0,1,1,0,0,0,0,0
+1231,59,Female,1231_left.jpg,1231_right.jpg,G,G,0,0,1,0,0,0,0,0
+1232,61,Male,1232_left.jpg,1232_right.jpg,G,G,0,0,1,0,0,0,0,0
+1234,66,Female,1234_left.jpg,1234_right.jpg,G,G,0,0,1,0,0,0,0,0
+1236,67,Female,1236_left.jpg,1236_right.jpg,optic nerve atrophy,optic nerve atrophy,0,0,0,0,0,0,0,1
+1237,62,Male,1237_left.jpg,1237_right.jpg,G,G,0,0,1,0,0,0,0,0
+1238,45,Male,1238_left.jpg,1238_right.jpg,diabetic retinopathy,G，diabetic retinopathy,0,1,1,0,0,0,0,0
+1239,62,Male,1239_left.jpg,1239_right.jpg,G,G,0,0,1,0,0,0,0,0
+1240,69,Female,1240_left.jpg,1240_right.jpg,N,macular epiretinal membrane,0,0,0,0,0,0,0,1
+1241,64,Female,1241_left.jpg,1241_right.jpg,G,G,0,0,1,0,0,0,0,0
+1242,1,Female,1242_left.jpg,1242_right.jpg,chorioretinal atrophy,N,0,0,0,0,0,0,0,1
+1243,81,Female,1243_left.jpg,1243_right.jpg,image offset,A，G,0,0,1,0,1,0,0,0
+1245,65,Female,1245_left.jpg,1245_right.jpg,N,macular epiretinal membrane,0,0,0,0,0,0,0,1
+1246,70,Female,1246_left.jpg,1246_right.jpg,G,G,0,0,1,0,0,0,0,0
+1247,65,Male,1247_left.jpg,1247_right.jpg,G,G,0,0,1,0,0,0,0,0
+1248,74,Female,1248_left.jpg,1248_right.jpg,G,G,0,0,1,0,0,0,0,0
+1250,54,Male,1250_left.jpg,1250_right.jpg,G,myopic maculopathy,0,0,1,0,0,0,1,0
+1251,68,Female,1251_left.jpg,1251_right.jpg,G，diabetic retinopathy,G，diabetic retinopathy,0,1,1,0,0,0,0,0
+1253,60,Female,1253_left.jpg,1253_right.jpg,N,N,1,0,0,0,0,0,0,0
+1254,77,Female,1254_left.jpg,1254_right.jpg,optic disk photographically invisible,G,0,0,1,0,0,0,0,0
+1255,33,Male,1255_left.jpg,1255_right.jpg,G，diffuse retinal atrophy,G,0,0,1,0,0,0,0,1
+1256,84,Male,1256_left.jpg,1256_right.jpg,G,G,0,0,1,0,0,0,0,0
+1258,72,Male,1258_left.jpg,1258_right.jpg,G,G,0,0,1,0,0,0,0,0
+1259,56,Male,1259_left.jpg,1259_right.jpg,G,G,0,0,1,0,0,0,0,0
+1260,66,Female,1260_left.jpg,1260_right.jpg,G,G,0,0,1,0,0,0,0,0
+1261,62,Female,1261_left.jpg,1261_right.jpg,G,G,0,0,1,0,0,0,0,0
+1262,70,Female,1262_left.jpg,1262_right.jpg,N,G,0,0,1,0,0,0,0,0
+1263,62,Male,1263_left.jpg,1263_right.jpg,old central retinal vein occlusion,G，H,0,0,1,0,0,1,0,1
+1264,54,Male,1264_left.jpg,1264_right.jpg,G,refractive media opacity,0,0,1,0,0,0,0,1
+1265,75,Male,1265_left.jpg,1265_right.jpg,G,G,0,0,1,0,0,0,0,0
+1266,68,Male,1266_left.jpg,1266_right.jpg,G,G,0,0,1,0,0,0,0,0
+1267,55,Male,1267_left.jpg,1267_right.jpg,G,G,0,0,1,0,0,0,0,0
+1268,56,Female,1268_left.jpg,1268_right.jpg,G,G,0,0,1,0,0,0,0,0
+1269,81,Female,1269_left.jpg,1269_right.jpg,G,G,0,0,1,0,0,0,0,0
+1270,62,Male,1270_left.jpg,1270_right.jpg,G,G,0,0,1,0,0,0,0,0
+1271,59,Female,1271_left.jpg,1271_right.jpg,G,G,0,0,1,0,0,0,0,0
+1272,59,Female,1272_left.jpg,1272_right.jpg,G,G,0,0,1,0,0,0,0,0
+1273,62,Male,1273_left.jpg,1273_right.jpg,fundus laser photocoagulation spots,G，fundus laser photocoagulation spots,0,0,1,0,0,0,0,1
+1274,48,Female,1274_left.jpg,1274_right.jpg,N,suspected abnormal color of  optic disc,0,0,0,0,0,0,0,1
+1276,63,Male,1276_left.jpg,1276_right.jpg,G,G,0,0,1,0,0,0,0,0
+1277,74,Male,1277_left.jpg,1277_right.jpg,G，intraretinal hemorrhage,G,0,0,1,0,0,0,0,1
+1279,84,Female,1279_left.jpg,1279_right.jpg,G，myopia retinopathy,G，myopia retinopathy,0,0,1,0,0,0,1,0
+1280,50,Female,1280_left.jpg,1280_right.jpg,A，G,N,0,0,1,0,1,0,0,0
+1281,61,Male,1281_left.jpg,1281_right.jpg,G，diabetic retinopathy,G，diabetic retinopathy,0,1,1,0,0,0,0,0
+1282,68,Female,1282_left.jpg,1282_right.jpg,G,G,0,0,1,0,0,0,0,0
+1284,42,Male,1284_left.jpg,1284_right.jpg,G,G,0,0,1,0,0,0,0,0
+1285,62,Female,1285_left.jpg,1285_right.jpg,C,D,0,1,0,1,0,0,0,0
+1286,62,Male,1286_left.jpg,1286_right.jpg,G，diabetic retinopathy,G，diabetic retinopathy,0,1,1,0,0,0,0,0
+1287,74,Male,1287_left.jpg,1287_right.jpg,G,G,0,0,1,0,0,0,0,0
+1288,63,Male,1288_left.jpg,1288_right.jpg,G,G,0,0,1,0,0,0,0,0
+1289,71,Female,1289_left.jpg,1289_right.jpg,G，myopia retinopathy,G，myopia retinopathy,0,0,1,0,0,0,1,0
+1290,54,Male,1290_left.jpg,1290_right.jpg,G，H,G，H,0,0,1,0,0,1,0,0
+1291,63,Male,1291_left.jpg,1291_right.jpg,G，macular epiretinal membrane,G，macular epiretinal membrane,0,0,1,0,0,0,0,1
+1294,73,Male,1294_left.jpg,1294_right.jpg,G,G,0,0,1,0,0,0,0,0
+1295,64,Female,1295_left.jpg,1295_right.jpg,wet age-related macular degeneration,A,0,0,0,0,1,0,0,0
+1296,60,Female,1296_left.jpg,1296_right.jpg,N,refractive media opacity,0,0,0,0,0,0,0,1
+1297,70,Male,1297_left.jpg,1297_right.jpg,G，macular epiretinal membrane,G,0,0,1,0,0,0,0,1
+1299,49,Female,1299_left.jpg,1299_right.jpg,old branch retinal vein occlusion,N,0,0,0,0,0,0,0,1
+1301,68,Male,1301_left.jpg,1301_right.jpg,G,G,0,0,1,0,0,0,0,0
+1302,49,Female,1302_left.jpg,1302_right.jpg,G，diabetic retinopathy,G，diabetic retinopathy,0,1,1,0,0,0,0,0
+1303,49,Male,1303_left.jpg,1303_right.jpg,G，central retinal vein occlusion,H,0,0,1,0,0,1,0,1
+1304,56,Female,1304_left.jpg,1304_right.jpg,drusen,drusen,0,0,0,0,0,0,0,1
+1306,72,Male,1306_left.jpg,1306_right.jpg,G,G,0,0,1,0,0,0,0,0
+1307,64,Female,1307_left.jpg,1307_right.jpg,G,G,0,0,1,0,0,0,0,0
+1308,45,Female,1308_left.jpg,1308_right.jpg,epiretinal membrane,epiretinal membrane，white vessel,0,0,0,0,0,0,0,1
+1309,49,Male,1309_left.jpg,1309_right.jpg,G，H,G，H,0,0,1,0,0,1,0,0
+1310,61,Female,1310_left.jpg,1310_right.jpg,lens dust，N,drusen，lens dust,0,0,0,0,0,0,0,1
+1311,67,Female,1311_left.jpg,1311_right.jpg,N,vitreous degeneration,0,0,0,0,0,0,0,1
+1314,43,Female,1314_left.jpg,1314_right.jpg,A，G,wet age-related macular degeneration，G,0,0,1,0,1,0,0,0
+1318,61,Female,1318_left.jpg,1318_right.jpg,G,G,0,0,1,0,0,0,0,0
+1319,61,Male,1319_left.jpg,1319_right.jpg,optic disk photographically invisible,G,0,0,1,0,0,0,0,0
+1325,76,Female,1325_left.jpg,1325_right.jpg,G,G,0,0,1,0,0,0,0,0
+1327,74,Female,1327_left.jpg,1327_right.jpg,G，macular epiretinal membrane,G,0,0,1,0,0,0,0,1
+1330,67,Female,1330_left.jpg,1330_right.jpg,G,G,0,0,1,0,0,0,0,0
+1334,69,Male,1334_left.jpg,1334_right.jpg,G,G,0,0,1,0,0,0,0,0
+1344,52,Female,1344_left.jpg,1344_right.jpg,G,G,0,0,1,0,0,0,0,0
+1345,49,Female,1345_left.jpg,1345_right.jpg,G,G,0,0,1,0,0,0,0,0
+1349,73,Male,1349_left.jpg,1349_right.jpg,M,M,0,0,0,0,0,0,1,0
+1351,36,Male,1351_left.jpg,1351_right.jpg,G,G,0,0,1,0,0,0,0,0
+1352,45,Male,1352_left.jpg,1352_right.jpg,G,G,0,0,1,0,0,0,0,0
+1353,63,Male,1353_left.jpg,1353_right.jpg,G,G,0,0,1,0,0,0,0,0
+1362,47,Female,1362_left.jpg,1362_right.jpg,G,G,0,0,1,0,0,0,0,0
+1364,53,Female,1364_left.jpg,1364_right.jpg,N,D，M,0,1,0,0,0,0,1,0
+1365,67,Female,1365_left.jpg,1365_right.jpg,G,G,0,0,1,0,0,0,0,0
+1366,81,Female,1366_left.jpg,1366_right.jpg,myopic retinopathy,myopic retinopathy,0,0,0,0,0,0,1,0
+1369,67,Male,1369_left.jpg,1369_right.jpg,G,optic disk photographically invisible,0,0,1,0,0,0,0,0
+1371,81,Male,1371_left.jpg,1371_right.jpg,G,G,0,0,1,0,0,0,0,0
+1373,68,Male,1373_left.jpg,1373_right.jpg,H,H，branch retinal vein occlusion，vitreous opacity,0,0,0,0,0,1,0,1
+1374,63,Female,1374_left.jpg,1374_right.jpg,G,G,0,0,1,0,0,0,0,0
+1377,64,Female,1377_left.jpg,1377_right.jpg,H,G，H,0,0,1,0,0,1,0,0
+1378,72,Female,1378_left.jpg,1378_right.jpg,G,G,0,0,1,0,0,0,0,0
+1383,67,Female,1383_left.jpg,1383_right.jpg,macular epiretinal membrane，G,macular epiretinal membrane,0,0,1,0,0,0,0,1
+1386,67,Female,1386_left.jpg,1386_right.jpg,G,G,0,0,1,0,0,0,0,0
+1388,62,Male,1388_left.jpg,1388_right.jpg,diabetic retinopathy,G,0,1,1,0,0,0,0,0
+1389,64,Female,1389_left.jpg,1389_right.jpg,G,G,0,0,1,0,0,0,0,0
+1392,80,Female,1392_left.jpg,1392_right.jpg,G,G,0,0,1,0,0,0,0,0
+1393,31,Female,1393_left.jpg,1393_right.jpg,N,G,0,0,1,0,0,0,0,0
+1396,63,Male,1396_left.jpg,1396_right.jpg,suspected G,refractive media opacity,0,0,1,0,0,0,0,1
+1397,56,Female,1397_left.jpg,1397_right.jpg,G,N,0,0,1,0,0,0,0,0
+1401,60,Female,1401_left.jpg,1401_right.jpg,lens dust，N,lens dust，suspected G,0,0,1,0,0,0,0,0
+1402,63,Male,1402_left.jpg,1402_right.jpg,suspected G，D,D,0,1,1,0,0,0,0,0
+1404,50,Female,1404_left.jpg,1404_right.jpg,suspected G,N,0,0,1,0,0,0,0,0
+1405,67,Male,1405_left.jpg,1405_right.jpg,suspected G，refractive media opacity,refractive media opacity,0,0,1,0,0,0,0,1
+1406,78,Female,1406_left.jpg,1406_right.jpg,suspected G，mild nonproliferative retinopathy,N,0,1,1,0,0,0,0,0
+1408,69,Male,1408_left.jpg,1408_right.jpg,refractive media opacity,suspected G，refractive media opacity,0,0,1,0,0,0,0,1
+1409,79,Female,1409_left.jpg,1409_right.jpg,mild nonproliferative retinopathy,D，lens dust，suspected G,0,1,1,0,0,0,0,0
+1410,69,Female,1410_left.jpg,1410_right.jpg,suspected G，refractive media opacity,mild nonproliferative retinopathy,0,1,1,0,0,0,0,1
+1411,79,Female,1411_left.jpg,1411_right.jpg,G,G，macular epiretinal membrane,0,0,1,0,0,0,0,1
+1412,71,Female,1412_left.jpg,1412_right.jpg,white vessel，suspected G,suspected G,0,0,1,0,0,0,0,1
+1413,68,Female,1413_left.jpg,1413_right.jpg,D,suspected G,0,1,1,0,0,0,0,0
+1414,66,Male,1414_left.jpg,1414_right.jpg,suspected G,N,0,0,1,0,0,0,0,0
+1415,81,Female,1415_left.jpg,1415_right.jpg,C,C，suspected G,0,0,1,1,0,0,0,0
+1416,66,Female,1416_left.jpg,1416_right.jpg,N,suspected G,0,0,1,0,0,0,0,0
+1417,83,Male,1417_left.jpg,1417_right.jpg,N,suspected G,0,0,1,0,0,0,0,0
+1418,68,Male,1418_left.jpg,1418_right.jpg,suspected G,N,0,0,1,0,0,0,0,0
+1419,67,Female,1419_left.jpg,1419_right.jpg,suspected G，drusen,drusen,0,0,1,0,0,0,0,1
+1420,76,Female,1420_left.jpg,1420_right.jpg,refractive media opacity,suspected G，refractive media opacity,0,0,1,0,0,0,0,1
+1421,60,Male,1421_left.jpg,1421_right.jpg,suspected G,N,0,0,1,0,0,0,0,0
+1422,43,Male,1422_left.jpg,1422_right.jpg,tessellated fundus，suspected G,tessellated fundus,0,0,1,0,0,0,0,1
+1423,75,Male,1423_left.jpg,1423_right.jpg,suspected G,N,0,0,1,0,0,0,0,0
+1424,74,Male,1424_left.jpg,1424_right.jpg,suspected G,N,0,0,1,0,0,0,0,0
+1425,70,Female,1425_left.jpg,1425_right.jpg,N,suspected G,0,0,1,0,0,0,0,0
+1426,68,Female,1426_left.jpg,1426_right.jpg,suspected G，drusen,vitreous degeneration,0,0,1,0,0,0,0,1
+1427,70,Male,1427_left.jpg,1427_right.jpg,N,suspected G,0,0,1,0,0,0,0,0
+1428,71,Female,1428_left.jpg,1428_right.jpg,suspected G，D,N,0,1,1,0,0,0,0,0
+1429,62,Female,1429_left.jpg,1429_right.jpg,suspected G,N,0,0,1,0,0,0,0,0
+1431,73,Male,1431_left.jpg,1431_right.jpg,suspected G,suspected G,0,0,1,0,0,0,0,0
+1433,57,Male,1433_left.jpg,1433_right.jpg,G,G,0,0,1,0,0,0,0,0
+1434,54,Male,1434_left.jpg,1434_right.jpg,suspected G，D,D，suspected G,0,1,1,0,0,0,0,0
+1435,79,Male,1435_left.jpg,1435_right.jpg,C,N,0,0,0,1,0,0,0,0
+1436,65,Female,1436_left.jpg,1436_right.jpg,G,G,0,0,1,0,0,0,0,0
+1439,60,Female,1439_left.jpg,1439_right.jpg,G,N,0,0,1,0,0,0,0,0
+1440,67,Male,1440_left.jpg,1440_right.jpg,G,G,0,0,1,0,0,0,0,0
+1441,50,Male,1441_left.jpg,1441_right.jpg,G,N,0,0,1,0,0,0,0,0
+1442,63,Male,1442_left.jpg,1442_right.jpg,G，mild nonproliferative retinopathy，macular pigmentation disorder,pigmentation disorder,0,1,1,0,0,0,0,1
+1443,57,Male,1443_left.jpg,1443_right.jpg,G,G,0,0,1,0,0,0,0,0
+1444,73,Female,1444_left.jpg,1444_right.jpg,C,N,0,0,0,1,0,0,0,0
+1447,56,Male,1447_left.jpg,1447_right.jpg,G,N,0,0,1,0,0,0,0,0
+1450,76,Female,1450_left.jpg,1450_right.jpg,G,N,0,0,1,0,0,0,0,0
+1452,57,Male,1452_left.jpg,1452_right.jpg,C,N,0,0,0,1,0,0,0,0
+1453,77,Male,1453_left.jpg,1453_right.jpg,N,G,0,0,1,0,0,0,0,0
+1454,79,Male,1454_left.jpg,1454_right.jpg,epiretinal membrane,C,0,0,0,1,0,0,0,1
+1455,31,Male,1455_left.jpg,1455_right.jpg,lens dust，G,lens dust，N,0,0,1,0,0,0,0,0
+1456,81,Male,1456_left.jpg,1456_right.jpg,C，lens dust,lens dust，C,0,0,0,1,0,0,0,0
+1458,75,Female,1458_left.jpg,1458_right.jpg,A，G,A，G,0,0,1,0,1,0,0,0
+1460,62,Female,1460_left.jpg,1460_right.jpg,N,C,0,0,0,1,0,0,0,0
+1462,71,Male,1462_left.jpg,1462_right.jpg,G,epiretinal membrane,0,0,1,0,0,0,0,1
+1463,44,Female,1463_left.jpg,1463_right.jpg,lens dust，epiretinal membrane,lens dust，G,0,0,1,0,0,0,0,1
+1465,54,Male,1465_left.jpg,1465_right.jpg,N,G,0,0,1,0,0,0,0,0
+1468,79,Male,1468_left.jpg,1468_right.jpg,C,N,0,0,0,1,0,0,0,0
+1469,51,Female,1469_left.jpg,1469_right.jpg,G,G,0,0,1,0,0,0,0,0
+1470,42,Male,1470_left.jpg,1470_right.jpg,G,G,0,0,1,0,0,0,0,0
+1471,45,Male,1471_left.jpg,1471_right.jpg,G,epiretinal membrane,0,0,1,0,0,0,0,1
+1473,57,Male,1473_left.jpg,1473_right.jpg,G,G,0,0,1,0,0,0,0,0
+1474,79,Female,1474_left.jpg,1474_right.jpg,G，D,drusen,0,1,1,0,0,0,0,1
+1475,73,Male,1475_left.jpg,1475_right.jpg,lens dust，G,N，lens dust,0,0,1,0,0,0,0,0
+1476,68,Male,1476_left.jpg,1476_right.jpg,N,G,0,0,1,0,0,0,0,0
+1477,71,Female,1477_left.jpg,1477_right.jpg,G,G,0,0,1,0,0,0,0,0
+1478,35,Male,1478_left.jpg,1478_right.jpg,G,N,0,0,1,0,0,0,0,0
+1479,76,Female,1479_left.jpg,1479_right.jpg,G,N,0,0,1,0,0,0,0,0
+1480,81,Male,1480_left.jpg,1480_right.jpg,refractive media opacity,G,0,0,1,0,0,0,0,1
+1482,69,Male,1482_left.jpg,1482_right.jpg,D，G,D,0,1,1,0,0,0,0,0
+1483,69,Female,1483_left.jpg,1483_right.jpg,C,C,0,0,0,1,0,0,0,0
+1484,65,Female,1484_left.jpg,1484_right.jpg,C,C,0,0,0,1,0,0,0,0
+1485,69,Female,1485_left.jpg,1485_right.jpg,N,G,0,0,1,0,0,0,0,0
+1486,61,Male,1486_left.jpg,1486_right.jpg,G,N,0,0,1,0,0,0,0,0
+1487,56,Female,1487_left.jpg,1487_right.jpg,G,G,0,0,1,0,0,0,0,0
+1488,51,Female,1488_left.jpg,1488_right.jpg,G,G，D,0,1,1,0,0,0,0,0
+1489,76,Female,1489_left.jpg,1489_right.jpg,G,N,0,0,1,0,0,0,0,0
+1490,79,Female,1490_left.jpg,1490_right.jpg,N,C,0,0,0,1,0,0,0,0
+1491,60,Female,1491_left.jpg,1491_right.jpg,G,N,0,0,1,0,0,0,0,0
+1492,54,Male,1492_left.jpg,1492_right.jpg,G,G,0,0,1,0,0,0,0,0
+1493,49,Male,1493_left.jpg,1493_right.jpg,G,N,0,0,1,0,0,0,0,0
+1494,38,Male,1494_left.jpg,1494_right.jpg,G,N,0,0,1,0,0,0,0,0
+1495,64,Female,1495_left.jpg,1495_right.jpg,G,G,0,0,1,0,0,0,0,0
+1496,31,Female,1496_left.jpg,1496_right.jpg,D,D，G,0,1,1,0,0,0,0,0
+1497,54,Male,1497_left.jpg,1497_right.jpg,G,G,0,0,1,0,0,0,0,0
+1498,52,Male,1498_left.jpg,1498_right.jpg,G,N,0,0,1,0,0,0,0,0
+1503,49,Male,1503_left.jpg,1503_right.jpg,N,G,0,0,1,0,0,0,0,0
+1507,62,Male,1507_left.jpg,1507_right.jpg,N,G,0,0,1,0,0,0,0,0
+1510,56,Male,1510_left.jpg,1510_right.jpg,N,G,0,0,1,0,0,0,0,0
+1513,79,Female,1513_left.jpg,1513_right.jpg,N,M,0,0,0,0,0,0,1,0
+1514,33,Male,1514_left.jpg,1514_right.jpg,G,N,0,0,1,0,0,0,0,0
+1515,78,Male,1515_left.jpg,1515_right.jpg,G,N,0,0,1,0,0,0,0,0
+1516,71,Female,1516_left.jpg,1516_right.jpg,refractive media opacity,refractive media opacity,0,0,0,0,0,0,0,1
+1519,68,Female,1519_left.jpg,1519_right.jpg,N,M,0,0,0,0,0,0,1,0
+1520,57,Male,1520_left.jpg,1520_right.jpg,refractive media opacity，M,M,0,0,0,0,0,0,1,1
+1523,76,Female,1523_left.jpg,1523_right.jpg,M,M,0,0,0,0,0,0,1,0
+1526,74,Female,1526_left.jpg,1526_right.jpg,M,M,0,0,0,0,0,0,1,0
+1527,64,Female,1527_left.jpg,1527_right.jpg,M,M,0,0,0,0,0,0,1,0
+1528,59,Female,1528_left.jpg,1528_right.jpg,M,refractive media opacity，M,0,0,0,0,0,0,1,1
+1529,57,Male,1529_left.jpg,1529_right.jpg,M,M,0,0,0,0,0,0,1,0
+1530,70,Male,1530_left.jpg,1530_right.jpg,M,M,0,0,0,0,0,0,1,0
+1531,63,Female,1531_left.jpg,1531_right.jpg,M,M,0,0,0,0,0,0,1,0
+1532,62,Female,1532_left.jpg,1532_right.jpg,M,M,0,0,0,0,0,0,1,0
+1533,62,Female,1533_left.jpg,1533_right.jpg,M,M,0,0,0,0,0,0,1,0
+1534,67,Female,1534_left.jpg,1534_right.jpg,M,M,0,0,0,0,0,0,1,0
+1535,45,Male,1535_left.jpg,1535_right.jpg,M,M，lens dust,0,0,0,0,0,0,1,0
+1536,66,Female,1536_left.jpg,1536_right.jpg,M,refractive media opacity，M,0,0,0,0,0,0,1,1
+1537,42,Male,1537_left.jpg,1537_right.jpg,M,M,0,0,0,0,0,0,1,0
+1538,49,Female,1538_left.jpg,1538_right.jpg,M,M,0,0,0,0,0,0,1,0
+1539,68,Male,1539_left.jpg,1539_right.jpg,M,M,0,0,0,0,0,0,1,0
+1540,56,Female,1540_left.jpg,1540_right.jpg,lens dust，M,M，lens dust,0,0,0,0,0,0,1,0
+1541,50,Male,1541_left.jpg,1541_right.jpg,M,N,0,0,0,0,0,0,1,0
+1543,30,Female,1543_left.jpg,1543_right.jpg,suspected D，M,M,0,1,0,0,0,0,1,0
+1544,68,Female,1544_left.jpg,1544_right.jpg,M,M,0,0,0,0,0,0,1,0
+1545,58,Female,1545_left.jpg,1545_right.jpg,M,M,0,0,0,0,0,0,1,0
+1546,53,Male,1546_left.jpg,1546_right.jpg,M,M,0,0,0,0,0,0,1,0
+1547,66,Female,1547_left.jpg,1547_right.jpg,M,M,0,0,0,0,0,0,1,0
+1548,63,Female,1548_left.jpg,1548_right.jpg,M,M,0,0,0,0,0,0,1,0
+1549,78,Female,1549_left.jpg,1549_right.jpg,M,M,0,0,0,0,0,0,1,0
+1550,76,Male,1550_left.jpg,1550_right.jpg,M,M,0,0,0,0,0,0,1,0
+1551,50,Male,1551_left.jpg,1551_right.jpg,M,M,0,0,0,0,0,0,1,0
+1552,67,Male,1552_left.jpg,1552_right.jpg,M,M,0,0,0,0,0,0,1,0
+1553,51,Female,1553_left.jpg,1553_right.jpg,M,M,0,0,0,0,0,0,1,0
+1554,78,Female,1554_left.jpg,1554_right.jpg,M,M,0,0,0,0,0,0,1,0
+1555,71,Male,1555_left.jpg,1555_right.jpg,M,M,0,0,0,0,0,0,1,0
+1556,66,Female,1556_left.jpg,1556_right.jpg,M,N,0,0,0,0,0,0,1,0
+1557,35,Female,1557_left.jpg,1557_right.jpg,M,refractive media opacity，M,0,0,0,0,0,0,1,1
+1558,73,Female,1558_left.jpg,1558_right.jpg,M,M,0,0,0,0,0,0,1,0
+1559,56,Female,1559_left.jpg,1559_right.jpg,M,M，suspected macular epimacular membrane,0,0,0,0,0,0,1,1
+1560,77,Female,1560_left.jpg,1560_right.jpg,tessellated fundus,M,0,0,0,0,0,0,1,1
+1561,63,Female,1561_left.jpg,1561_right.jpg,M,M,0,0,0,0,0,0,1,0
+1562,62,Female,1562_left.jpg,1562_right.jpg,M,M,0,0,0,0,0,0,1,0
+1563,1,Female,1563_left.jpg,1563_right.jpg,M,M,0,0,0,0,0,0,1,0
+1564,1,Female,1564_left.jpg,1564_right.jpg,M,M,0,0,0,0,0,0,1,0
+1565,1,Female,1565_left.jpg,1565_right.jpg,M,M,0,0,0,0,0,0,1,0
+1566,75,Female,1566_left.jpg,1566_right.jpg,M,tessellated fundus,0,0,0,0,0,0,1,1
+1567,47,Male,1567_left.jpg,1567_right.jpg,tessellated fundus，peripapillary atrophy,M,0,0,0,0,0,0,1,1
+1568,1,Female,1568_left.jpg,1568_right.jpg,M,M,0,0,0,0,0,0,1,0
+1569,50,Male,1569_left.jpg,1569_right.jpg,N,M,0,0,0,0,0,0,1,0
+1570,46,Female,1570_left.jpg,1570_right.jpg,M,M,0,0,0,0,0,0,1,0
+1571,65,Male,1571_left.jpg,1571_right.jpg,M,tessellated fundus，peripapillary atrophy,0,0,0,0,0,0,1,1
+1572,75,Male,1572_left.jpg,1572_right.jpg,M,M,0,0,0,0,0,0,1,0
+1573,69,Female,1573_left.jpg,1573_right.jpg,tessellated fundus，peripapillary atrophy,M,0,0,0,0,0,0,1,1
+1574,73,Female,1574_left.jpg,1574_right.jpg,tessellated fundus，peripapillary atrophy,M,0,0,0,0,0,0,1,1
+1576,67,Female,1576_left.jpg,1576_right.jpg,M,M,0,0,0,0,0,0,1,0
+1578,34,Female,1578_left.jpg,1578_right.jpg,M,M,0,0,0,0,0,0,1,0
+1579,57,Female,1579_left.jpg,1579_right.jpg,M,M,0,0,0,0,0,0,1,0
+1580,58,Female,1580_left.jpg,1580_right.jpg,M,M,0,0,0,0,0,0,1,0
+1581,58,Female,1581_left.jpg,1581_right.jpg,tessellated fundus,M,0,0,0,0,0,0,1,1
+1583,1,Female,1583_left.jpg,1583_right.jpg,M,M,0,0,0,0,0,0,1,0
+1584,73,Female,1584_left.jpg,1584_right.jpg,M,M,0,0,0,0,0,0,1,0
+1585,56,Female,1585_left.jpg,1585_right.jpg,tessellated fundus，chorioretinal atrophy,M,0,0,0,0,0,0,1,1
+1586,60,Female,1586_left.jpg,1586_right.jpg,M,M,0,0,0,0,0,0,1,0
+1588,1,Female,1588_left.jpg,1588_right.jpg,M,M,0,0,0,0,0,0,1,0
+1589,1,Female,1589_left.jpg,1589_right.jpg,M,M,0,0,0,0,0,0,1,0
+1590,1,Female,1590_left.jpg,1590_right.jpg,N,M,0,0,0,0,0,0,1,0
+1591,62,Female,1591_left.jpg,1591_right.jpg,M,tessellated fundus，peripapillary atrophy,0,0,0,0,0,0,1,1
+1593,57,Female,1593_left.jpg,1593_right.jpg,M,M,0,0,0,0,0,0,1,0
+1594,65,Female,1594_left.jpg,1594_right.jpg,M,M,0,0,0,0,0,0,1,0
+1595,1,Female,1595_left.jpg,1595_right.jpg,tessellated fundus，peripapillary atrophy,M,0,0,0,0,0,0,1,1
+1597,64,Female,1597_left.jpg,1597_right.jpg,tessellated fundus，peripapillary atrophy,M,0,0,0,0,0,0,1,1
+1598,60,Female,1598_left.jpg,1598_right.jpg,M,tessellated fundus，peripapillary atrophy,0,0,0,0,0,0,1,1
+1599,1,Female,1599_left.jpg,1599_right.jpg,M,M,0,0,0,0,0,0,1,0
+1600,1,Female,1600_left.jpg,1600_right.jpg,M,M,0,0,0,0,0,0,1,0
+1601,73,Female,1601_left.jpg,1601_right.jpg,M,M,0,0,0,0,0,0,1,0
+1602,38,Female,1602_left.jpg,1602_right.jpg,M,M,0,0,0,0,0,0,1,0
+1603,1,Female,1603_left.jpg,1603_right.jpg,M,M,0,0,0,0,0,0,1,0
+1605,54,Male,1605_left.jpg,1605_right.jpg,M,M,0,0,0,0,0,0,1,0
+1606,54,Male,1606_left.jpg,1606_right.jpg,M,M,0,0,0,0,0,0,1,0
+1607,62,Female,1607_left.jpg,1607_right.jpg,M,M,0,0,0,0,0,0,1,0
+1609,58,Female,1609_left.jpg,1609_right.jpg,M,drusen,0,0,0,0,0,0,1,1
+1610,64,Male,1610_left.jpg,1610_right.jpg,M,N,0,0,0,0,0,0,1,0
+1611,70,Female,1611_left.jpg,1611_right.jpg,M,N,0,0,0,0,0,0,1,0
+1612,53,Female,1612_left.jpg,1612_right.jpg,M,M,0,0,0,0,0,0,1,0
+1613,66,Female,1613_left.jpg,1613_right.jpg,M,M,0,0,0,0,0,0,1,0
+1614,56,Female,1614_left.jpg,1614_right.jpg,tessellated fundus，peripapillary atrophy,M,0,0,0,0,0,0,1,1
+1615,60,Female,1615_left.jpg,1615_right.jpg,M,M,0,0,0,0,0,0,1,0
+1616,47,Female,1616_left.jpg,1616_right.jpg,M,M,0,0,0,0,0,0,1,0
+1617,1,Female,1617_left.jpg,1617_right.jpg,M,M,0,0,0,0,0,0,1,0
+1618,67,Female,1618_left.jpg,1618_right.jpg,M,M,0,0,0,0,0,0,1,0
+1619,70,Female,1619_left.jpg,1619_right.jpg,N,M,0,0,0,0,0,0,1,0
+1620,62,Male,1620_left.jpg,1620_right.jpg,N,M,0,0,0,0,0,0,1,0
+1621,50,Female,1621_left.jpg,1621_right.jpg,M,M,0,0,0,0,0,0,1,0
+1623,58,Female,1623_left.jpg,1623_right.jpg,M,M,0,0,0,0,0,0,1,0
+1624,71,Female,1624_left.jpg,1624_right.jpg,M,M,0,0,0,0,0,0,1,0
+1626,74,Male,1626_left.jpg,1626_right.jpg,M,tessellated fundus，peripapillary atrophy,0,0,0,0,0,0,1,1
+1628,56,Male,1628_left.jpg,1628_right.jpg,M,tessellated fundus，peripapillary atrophy,0,0,0,0,0,0,1,1
+1629,50,Female,1629_left.jpg,1629_right.jpg,M,M,0,0,0,0,0,0,1,0
+1630,61,Male,1630_left.jpg,1630_right.jpg,M,M,0,0,0,0,0,0,1,0
+1638,59,Male,1638_left.jpg,1638_right.jpg,M,retinal detachment，tessellated fundus,0,0,0,0,0,0,1,1
+1640,45,Male,1640_left.jpg,1640_right.jpg,M,tessellated fundus，peripapillary atrophy,0,0,0,0,0,0,1,1
+1642,63,Male,1642_left.jpg,1642_right.jpg,tessellated fundus，peripapillary atrophy,M,0,0,0,0,0,0,1,1
+1643,69,Male,1643_left.jpg,1643_right.jpg,M,tessellated fundus，peripapillary atrophy,0,0,0,0,0,0,1,1
+1644,63,Female,1644_left.jpg,1644_right.jpg,refractive media opacity,M,0,0,0,0,0,0,1,1
+1647,69,Male,1647_left.jpg,1647_right.jpg,M,M,0,0,0,0,0,0,1,0
+1652,32,Female,1652_left.jpg,1652_right.jpg,chorioretinal atrophy,M,0,0,0,0,0,0,1,1
+1657,50,Female,1657_left.jpg,1657_right.jpg,lens dust，M,mild nonproliferative retinopathy,0,1,0,0,0,0,1,0
+1659,58,Female,1659_left.jpg,1659_right.jpg,chorioretinal atrophy,M,0,0,0,0,0,0,1,1
+1660,54,Male,1660_left.jpg,1660_right.jpg,myopic retinopathy,myopic retinopathy,0,0,0,0,0,0,1,0
+1662,68,Male,1662_left.jpg,1662_right.jpg,M,chorioretinal atrophy,0,0,0,0,0,0,1,1
+1663,77,Male,1663_left.jpg,1663_right.jpg,M,N,0,0,0,0,0,0,1,0
+1664,45,Female,1664_left.jpg,1664_right.jpg,chorioretinal atrophy,M,0,0,0,0,0,0,1,1
+1666,47,Male,1666_left.jpg,1666_right.jpg,N,M,0,0,0,0,0,0,1,0
+1673,73,Male,1673_left.jpg,1673_right.jpg,epiretinal membrane,M,0,0,0,0,0,0,1,1
+1674,74,Female,1674_left.jpg,1674_right.jpg,D，M,refractive media opacity,0,1,0,0,0,0,1,1
+1677,87,Male,1677_left.jpg,1677_right.jpg,tessellated fundus,M,0,0,0,0,0,0,1,1
+1681,70,Male,1681_left.jpg,1681_right.jpg,refractive media opacity,M,0,0,0,0,0,0,1,1
+1683,72,Female,1683_left.jpg,1683_right.jpg,peripapillary atrophy,M,0,0,0,0,0,0,1,1
+1686,51,Male,1686_left.jpg,1686_right.jpg,M,M,0,0,0,0,0,0,1,0
+1694,52,Male,1694_left.jpg,1694_right.jpg,refractive media opacity,M,0,0,0,0,0,0,1,1
