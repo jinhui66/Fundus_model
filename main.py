@@ -24,7 +24,7 @@ from Dataset import EyesDataset, TransformedSubset
 from utils.metrics import Metric_Manager
 from sklearn.model_selection import StratifiedKFold, KFold
 from model import *
-from network.Eyenet import *
+from model.Eyenet import *
 import numpy as np
 
 

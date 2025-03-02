@@ -24,10 +24,10 @@ from Dataset import DoubleEyesDataset, DoubleTransformedSubset
 from utils.metrics import Metric_Manager
 from sklearn.model_selection import StratifiedKFold, KFold
 from model import *
-from network.Eyenet import *
+from model.Eyenet import *
 import numpy as np
-from network.DoubleResnet import DoubleResNet
-from network.DoubleResnetShared import DoubleResNetShared
+from model.DoubleResnet import DoubleResNet
+from model.DoubleResnetShared import DoubleResNetShared
 import matplotlib.pyplot as plt
 import numpy as np
 from PIL import Image
@@ -69,18 +69,18 @@ def k_fold_cross_validation(device, eyes_dataset, epochs, k_fold=5,
         train_dataloader = torch.utils.data.DataLoader(dataset=train_dataset, batch_size=batch_size, shuffle=True)
         eval_dataloader = torch.utils.data.DataLoader(dataset=val_dataset, batch_size=batch_size, shuffle=False)
         
-        # X = torch.zeros(1)
-        # Count = 0
-        # for (_, _, labels) in train_dataloader:
-        #     X += torch.sum(labels[:, 3:4],dim=0)
-        #     Count += labels.shape[0]
-        #     # break
-        #     # print(X, Count)
-        # # X = torch.tensor([100., 100., 100., 100., 100., 100., 100.])
-        # print("各疾病总数:", X, Count)
-        # X = Count / X - 1
-        # print("各疾病损失权重:", X)
-        X = torch.tensor([12.5706])
+        X = torch.zeros(1)
+        Count = 0
+        for (_, _, labels) in train_dataloader:
+            X += torch.sum(labels[:, 3:4],dim=0)
+            Count += labels.shape[0]
+            # break
+            # print(X, Count)
+        # X = torch.tensor([100., 100., 100., 100., 100., 100., 100.])
+        print("各疾病总数:", X, Count)
+        X = Count / X - 1
+        print("各疾病损失权重:", X)
+        # X = torch.tensor([12.5706])
         loss_fn = nn.BCEWithLogitsLoss(pos_weight=X).to(device)  # 损失函数
         # loss_fn = nn.BCEWithLogitsLoss().to(device)
         # model = poolformer_s24(num_classes=8).to(device)
@@ -127,7 +127,7 @@ def k_fold_cross_validation(device, eyes_dataset, epochs, k_fold=5,
 
 
             train_accuracy, train_recall, train_precision, train_specificity = train_metric.get_metrics()
-            total_train_loss /= len(train_dataloader)
+            # total_train_loss /= len(train_dataloader)
 
             print(f"Epoch [{e}/{epochs}]: train_loss={total_train_loss:.3f}, accuracy={train_accuracy}, recall={train_recall}, precision={train_precision}, specificity={train_specificity}")
             if e % print_freq == 0:
@@ -160,7 +160,7 @@ def k_fold_cross_validation(device, eyes_dataset, epochs, k_fold=5,
                 valid_accuracy, valid_recall, valid_precision, valid_specificity = valid_metric.get_metrics()
                 average_accuracy = np.average(valid_accuracy)
 
-                total_eval_loss /= len(eval_dataloader)
+                # total_eval_loss /= len(eval_dataloader)
 
             if total_eval_loss < best_loss:
                 best_loss = total_eval_loss
@@ -216,7 +216,7 @@ if __name__ == '__main__':
         transforms.Resize((image_size, image_size)),
         transforms.RandomHorizontalFlip(0.5),
         transforms.RandomRotation(45),
-        transforms.RandomAdjustSharpness(1.3, 1),
+        # transforms.RandomAdjustSharpness(1.3, 1),
         transforms.ToTensor(),
         transforms.Normalize(mean, std)
         ]),
@@ -232,9 +232,9 @@ if __name__ == '__main__':
         ])
     }
     # data_dir = "/data3/wangchangmiao/jinhui/eye/result_seg"
-    data_dir = "/data3/wangchangmiao/jinhui/eye/ietk_Enhanced"
+    data_dir = "/data3/wangchangmiao/jinhui/eye/Enhanced"
     # 初始化自定义数据集
-    dataset = DoubleEyesDataset(csv_file="./double_valid_data.csv",
+    dataset = DoubleEyesDataset(csv_file="./data/double_valid_data.csv",
                             img_prefix=args.data_dir,
                             transform=None)
 

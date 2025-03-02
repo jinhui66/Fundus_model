@@ -24,10 +24,10 @@ from Dataset import DoubleEyesDataset, DoubleTransformedSubset
 from utils.metrics import Metric_Manager
 from sklearn.model_selection import StratifiedKFold, KFold
 from model import *
-from network.Eyenet import *
+from model.Eyenet import *
 import numpy as np
-from network.DoubleResnet import DoubleResNet
-from network.DoubleResnetShared import DoubleResNetShared
+from model.DoubleResnet import DoubleResNet
+from model.DoubleResnetShared import DoubleResNetShared
 
 
 def to0_1(tensor):
