@@ -121,7 +121,7 @@ def k_fold_cross_validation(device, eyes_dataset, epochs, k_fold=5,
 
 
             train_accuracy, train_recall, train_precision, train_specificity = train_metric.get_metrics()
-            # total_train_loss /= len(train_dataloader)
+            total_train_loss /= len(train_index)
 
             print(f"Epoch [{e}/{epochs}]: train_loss={total_train_loss:.3f}, accuracy={train_accuracy}, recall={train_recall}, precision={train_precision}, specificity={train_specificity}")
             if e % print_freq == 0:
@@ -154,7 +154,7 @@ def k_fold_cross_validation(device, eyes_dataset, epochs, k_fold=5,
                 valid_accuracy, valid_recall, valid_precision, valid_specificity = valid_metric.get_metrics()
                 average_accuracy = np.average(valid_accuracy)
 
-                # total_eval_loss /= len(eval_dataloader)
+                total_eval_loss /= len(test_index)
 
             if total_eval_loss < best_loss:
                 best_loss = total_eval_loss
