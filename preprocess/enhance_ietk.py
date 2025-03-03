@@ -4,7 +4,8 @@ from matplotlib import pyplot as plt
 from glob import glob
 from ietk import methods
 from ietk import util
-
+import torch
+from torchvision import transforms
 def process_fundus_images(input_folder, output_folder=None):
     """
     处理指定文件夹中的所有眼底图像JPG文件：
@@ -17,11 +18,14 @@ def process_fundus_images(input_folder, output_folder=None):
     # 如果指定了输出文件夹且不存在，则创建
     if output_folder and not os.path.exists(output_folder):
         os.makedirs(output_folder)
-    
+    count = 0
     # 获取所有JPG图像
     image_paths = glob(os.path.join(input_folder, "*.jpg"))
-    
+    transform = transforms.Resize((256, 256))
     for img_path in image_paths:
+        count += 1
+        if count <= 2435:
+            continue
         # 提取文件名
         img_name = os.path.basename(img_path)
         print(f"正在处理 {img_name}")
@@ -42,6 +46,12 @@ def process_fundus_images(input_folder, output_folder=None):
         
         # 应用锐化处理
         enhanced_img2 = methods.sharpen(enhanced_img, bg=~fg)
+        # print(len(enhanced_img2))
+        tensor = torch.from_numpy(enhanced_img2).permute(2,0,1)
+        
+        # print(tensor.shape)
+        tensor = transform(tensor).permute(1,2,0)
+        enhanced_img2 = tensor.numpy()
         
         # 如果指定了输出文件夹，则保存结果
         if output_folder:

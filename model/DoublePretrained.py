@@ -4,10 +4,11 @@ from model.Eyenet import EyeNet
 from model import *
 
 class DoublePretrained(nn.Module):
-    def __init__(self, num_classes, pretrained_path, include_top=True):
+    def __init__(self, num_classes, pretrained_path, pretrained=True):
         super(DoublePretrained, self).__init__()
         backbone = poolformer_s12(num_classes=1000)
-        backbone.load_state_dict(torch.load(pretrained_path))
+        if pretrained:
+            backbone.load_state_dict(torch.load(pretrained_path))
         backbone.head = torch.nn.Linear(backbone.head.in_features, num_classes)
         self.backbone = backbone
         self.fc1 = nn.Linear(2 * num_classes, num_classes)
