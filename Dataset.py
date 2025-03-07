@@ -4,6 +4,98 @@ from torch.utils.data import Dataset, DataLoader
 from torchvision import transforms
 from PIL import Image
 
+class CombineEyesDataset(Dataset):
+    def __init__(self, csv_file, img_prefix, G_prefix="/data3/wangchangmiao/jinhui/eye/result_seg", vessel_prefix=None, transform=None):
+        """
+        初始化 Dataset
+        :param csv_file: str, CSV 文件路径
+        :param img_prefix: str, 图片路径前缀
+        :param transform: torchvision.transforms, 数据增强和预处理
+        """
+        self.data = pd.read_csv(csv_file)
+        self.img_prefix = img_prefix
+        self.G_prefix = G_prefix
+        self.vessel_prefix = vessel_prefix
+        self.labels = {'N': 0, 'D': 1, 'G': 2, 'C': 3, 'A': 4, 'H': 5, 'M': 6, 'O': 7}
+        self.transform = transform
+
+    def __len__(self):
+        """
+        返回数据集的长度
+        """
+        return len(self.data)
+
+    def get_label_index(self, row):
+        """
+        根据标签列返回类别索引
+        :param row: DataFrame 的一行
+        :return: int, 类别索引
+        """
+        label_index = torch.zeros(8)
+        for label, index in self.labels.items():
+            if row[label] == 1:
+                label_index[index] = 1
+
+        return label_index
+
+    def __getitem__(self, idx):
+        """
+        获取指定索引的数据
+        :param idx: int, 数据索引
+        :return: tuple (image, label_index)
+        """
+        idx = int(idx)
+        if isinstance(idx, int):
+            row = self.data.iloc[idx]
+        else:
+            raise TypeError("Index must be an integer.")
+
+        # 构造图片路径
+        # print(row)
+        left_img_name = row.iloc[3]  
+        left_img_path = f"{self.img_prefix}/{left_img_name}"
+        left_G_path = f"{self.G_prefix}/{left_img_name}"
+        
+        right_img_name = row.iloc[4]  
+        right_img_path = f"{self.img_prefix}/{right_img_name}"
+        right_G_path = f"{self.G_prefix}/{right_img_name}"
+        
+        # 打开图片
+        left_image = Image.open(left_img_path).convert('RGB')
+        right_image = Image.open(right_img_path).convert('RGB')
+        left_G = Image.open(left_G_path).convert('RGB')
+        right_G = Image.open(right_G_path).convert('RGB')
+        # 数据增强和预处理
+        if self.transform:
+            image = self.transform(image)
+
+        # 获取类别索引
+        label_index = self.get_label_index(row)
+
+        return left_image, right_image, left_G, right_G, label_index
+
+class CombineTransformedSubset(Dataset):
+    def __init__(self, subset, transform=None):
+        self.subset = subset
+        self.transform = transform
+        self.transform2 = transforms.Compose([transforms.RandomHorizontalFlip(0.5),
+                            transforms.RandomRotation(45)])
+        
+    def __getitem__(self, index):
+        x, y, a,b,c = self.subset[index]
+        if self.transform:
+            x = self.transform(x)
+            y = self.transform(y)
+            a = self.transform(a) 
+            b = self.transform(b)
+            x += a
+            y += b
+            x = self.transform2(x)
+            y = self.transform2(y)
+        return x, y,c
+
+    def __len__(self):
+        return len(self.subset)
 
 class DoubleEyesDataset(Dataset):
     def __init__(self, csv_file, img_prefix, transform=None):

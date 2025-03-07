@@ -63,7 +63,7 @@ class UNet(nn.Module):
                  in_channels: int = 1,
                  num_classes: int = 2,
                  bilinear: bool = True,
-                 base_c: int = 64):
+                 base_c: int = 128):
         super(UNet, self).__init__()
         self.in_channels = in_channels
         self.num_classes = num_classes

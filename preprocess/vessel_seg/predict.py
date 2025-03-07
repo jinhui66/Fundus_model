@@ -65,6 +65,9 @@ def process_image(model, img_path, output_dir, device):
         # 将掩码覆盖到原图上
         result_img = Image.alpha_composite(original_img, mask)
         
+        # 调整大小为256x256
+        # result_img = result_img.resize((256, 256), Image.BILINEAR)
+        
         # 保存结果
         result_path = os.path.join(output_dir, os.path.basename(img_path))
         # 如果需要保存为JPG格式，需要先转换回RGB模式
@@ -72,12 +75,13 @@ def process_image(model, img_path, output_dir, device):
         result_img.save(result_path)
         print(f"Saved result for {img_path} to {result_path}")
 
+
 def main():
     weights_path = "./save_weights/best_model.pth"
 
-    input_dir = r"/data3/wangchangmiao/jinhui/eye/ietk_Enhanced"  # 文件夹中包含待推理的图像
+    input_dir = r"/data3/wangchangmiao/jinhui/eye/Enhanced"   # 文件夹中包含待推理的图像
     #input_dir = "./images"
-    output_dir = "/data3/wangchangmiao/jinhui/eye/ietk_vessel_seg"  # 存放推理结果
+    output_dir = "/data3/wangchangmiao/jinhui/eye/vessel_enhanced"  # 存放推理结果
 
     # 检查文件夹和模型文件是否存在
     assert os.path.exists(weights_path), f"weights {weights_path} not found."

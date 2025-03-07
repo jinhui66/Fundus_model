@@ -2,7 +2,7 @@
 PoolFormer implementation
 """
 import os
-os.environ['CUDA_VISIBLE_DEVICES'] = '7'
+os.environ['CUDA_VISIBLE_DEVICES'] = '2'
 import copy
 import torch
 import torch.nn as nn
@@ -85,7 +85,7 @@ def k_fold_cross_validation(device, eyes_dataset, epochs, k_fold=5,
         optimizer = torch.optim.Adam(model.parameters(), lr=args.learning_rate, weight_decay=1e-7, betas=(0.9, 0.98))
         total_params = sum(p.numel() for p in model.parameters())
         print('总参数个数:{}'.format(total_params))
-        best_loss = 10.
+        best_score = 0.
         best_epoch = 0
         best_acc = 0.
         best_metrics = {}
@@ -117,6 +117,7 @@ def k_fold_cross_validation(device, eyes_dataset, epochs, k_fold=5,
 
             train_accuracy, train_recall, train_precision, train_specificity = train_metric.get_metrics()
             score = train_metric.compute_score()
+            # total_score = score[0]
             total_train_loss /= len(train_index)
 
             print(f"Epoch [{e}/{epochs}]: train_loss={total_train_loss:.3f}, accuracy={train_accuracy}, recall={train_recall}, precision={train_precision}, specificity={train_specificity}, score={score}")
@@ -149,15 +150,15 @@ def k_fold_cross_validation(device, eyes_dataset, epochs, k_fold=5,
                     
                 valid_accuracy, valid_recall, valid_precision, valid_specificity = valid_metric.get_metrics()
                 score = valid_metric.compute_score()
+                total_score = score[0]
 
                 total_eval_loss /= len(test_index)
 
-            if total_eval_loss < best_loss:
-                best_loss = total_eval_loss
+            if total_score < best_score:
+                best_score = total_score
                 best_epoch = e
                 torch.save(model.state_dict(), f'./checkpoint/pretrained{fold}.pth')
 
-                # torch.save(model.state_dict(), checkpoint_dir + f'/{best_result_model_path}_fold{fold}.pth')
                 
             print(f"Epoch [{e}/{epochs}]: val_loss={total_eval_loss:.3f}, accuracy={valid_accuracy}, recall={valid_recall}, precision={valid_precision}, specificity={valid_specificity}, score={score}")
             
@@ -221,9 +222,10 @@ if __name__ == '__main__':
         transforms.Normalize(mean, std)
         ])
     }
+    data_dir = "/data3/wangchangmiao/jinhui/eye/image_without_vessel"
     # 初始化自定义数据集
     dataset = DoubleEyesDataset(csv_file="./data/double_valid_data.csv",
-                            img_prefix=args.data_dir,
+                            img_prefix=data_dir,
                             transform=None)
 
     # 定义模型保存的文件夹
@@ -232,7 +234,7 @@ if __name__ == '__main__':
     # 训练的总轮数
     EPOCH = 500
     epoch = 0
-    otuput_file = "double_pretrained3.txt"
+    otuput_file = "double_pretrained4.txt"
     k_fold_cross_validation(device, dataset, EPOCH, k_fold=args.k_split_value,
                             batch_size=args.batch_size, workers=2, print_freq=1, checkpoint_dir=model_dir,
                             best_result_model_path="model", total_transform=train_validation_test_transform)

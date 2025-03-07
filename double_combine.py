@@ -2,7 +2,7 @@
 PoolFormer implementation
 """
 import os
-os.environ['CUDA_VISIBLE_DEVICES'] = '7'
+os.environ['CUDA_VISIBLE_DEVICES'] = '4'
 import copy
 import torch
 import torch.nn as nn
@@ -20,7 +20,7 @@ from torch.utils.data import DataLoader, Dataset, Subset
 from torchvision import transforms
 from torch.utils.tensorboard import SummaryWriter
 from tqdm import tqdm
-from Dataset import DoubleEyesDataset, DoubleTransformedSubset
+from Dataset import CombineEyesDataset, CombineTransformedSubset
 from utils.metrics import Metric_Manager_Normal
 from sklearn.model_selection import StratifiedKFold, KFold
 from model import *
@@ -58,8 +58,8 @@ def k_fold_cross_validation(device, eyes_dataset, epochs, k_fold=5,
         k_train_fold = Subset(eyes_dataset, train_index)
         k_test_fold = Subset(eyes_dataset, test_index)
         # 应用转换
-        train_dataset = DoubleTransformedSubset(k_train_fold, transform=total_transform['train_transforms'])
-        val_dataset = DoubleTransformedSubset(k_test_fold, transform=total_transform['validation_transforms'])
+        train_dataset = CombineTransformedSubset(k_train_fold, transform=total_transform['train_transforms'])
+        val_dataset = CombineTransformedSubset(k_test_fold, transform=total_transform['validation_transforms'])
 
         # package type of DataLoader
         train_dataloader = torch.utils.data.DataLoader(dataset=train_dataset, batch_size=batch_size, shuffle=True)
@@ -76,7 +76,9 @@ def k_fold_cross_validation(device, eyes_dataset, epochs, k_fold=5,
         # print("各疾病总数:", X, Count)
         # X = Count / X - 1
         # print("各疾病损失权重:", X)
+        # N D G C A M H O
         X = torch.tensor([ 4.7388, 12.5706, 12.4128, 17.0234, 33.4328, 14.9103,  2.0760])
+        # X = torch.tensor([ 12.5706, 12.4128, 14.9103])
         loss_fn = nn.BCEWithLogitsLoss(pos_weight=X).to(device)  # 损失函数
 
         model = DoublePretrained(num_classes=7, pretrained_path=args.pretrainedModelPath, pretrained=True).to(device)
@@ -99,7 +101,9 @@ def k_fold_cross_validation(device, eyes_dataset, epochs, k_fold=5,
             train_iterator = tqdm(train_dataloader, desc=f"Training Epoch {e}", unit="batch")
             for batch_idx, (left_images, right_images, labels) in enumerate(train_iterator):
                 left_images, right_images, labels = left_images.to(device), right_images.to(device), labels.to(device)
-
+                # left_G, right_G = left_G.to(device), right_G.to(device)
+                # left_images += left_G
+                # right_images += right_G
                 optimizer.zero_grad()
 
                 predictions = model(left_images, right_images)
@@ -133,7 +137,9 @@ def k_fold_cross_validation(device, eyes_dataset, epochs, k_fold=5,
                 eval_iterator = tqdm(eval_dataloader, desc=f"Evaluating Epoch {e}", unit="batch")
                 for batch_idx, (left_images, right_images, labels) in enumerate(eval_iterator):
                     left_images, right_images, labels = left_images.to(device), right_images.to(device), labels.to(device)
-
+                    # left_G, right_G = left_G.to(device), right_G.to(device)
+                    # left_images += left_G
+                    # right_images += right_G
                     predictions = model(left_images, right_images)
                     
                     # predictions = torch.sigmoid(predictions)
@@ -155,7 +161,7 @@ def k_fold_cross_validation(device, eyes_dataset, epochs, k_fold=5,
             if total_eval_loss < best_loss:
                 best_loss = total_eval_loss
                 best_epoch = e
-                torch.save(model.state_dict(), f'./checkpoint/pretrained{fold}.pth')
+                torch.save(model.state_dict(), f'./checkpoint/combine{fold}.pth')
 
                 # torch.save(model.state_dict(), checkpoint_dir + f'/{best_result_model_path}_fold{fold}.pth')
                 
@@ -204,8 +210,8 @@ if __name__ == '__main__':
     train_validation_test_transform={
         'train_transforms':transforms.Compose([
         transforms.Resize((image_size, image_size)),
-        transforms.RandomHorizontalFlip(0.5),
-        transforms.RandomRotation(45),
+        # transforms.RandomHorizontalFlip(0.5),
+        # transforms.RandomRotation(45),
         # transforms.RandomAdjustSharpness(1.3, 1),
         transforms.ToTensor(),
         transforms.Normalize(mean, std)
@@ -222,7 +228,7 @@ if __name__ == '__main__':
         ])
     }
     # 初始化自定义数据集
-    dataset = DoubleEyesDataset(csv_file="./data/double_valid_data.csv",
+    dataset = CombineEyesDataset(csv_file="./data/double_valid_data.csv",
                             img_prefix=args.data_dir,
                             transform=None)
 
@@ -232,7 +238,7 @@ if __name__ == '__main__':
     # 训练的总轮数
     EPOCH = 500
     epoch = 0
-    otuput_file = "double_pretrained3.txt"
+    otuput_file = "double_combine.txt"
     k_fold_cross_validation(device, dataset, EPOCH, k_fold=args.k_split_value,
                             batch_size=args.batch_size, workers=2, print_freq=1, checkpoint_dir=model_dir,
                             best_result_model_path="model", total_transform=train_validation_test_transform)

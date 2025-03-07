@@ -85,9 +85,9 @@ class Metric_Manager:
         average_recall = np.sum(self.TP) / (np.sum(self.TP) + np.sum(self.FN))
         average_precision = np.sum(self.TP) / (np.sum(self.TP) + np.sum(self.FP))
         average_specificity = np.sum(self.TN) / (np.sum(self.TN) + np.sum(self.FP))
-        print(average_accuracy)
+        # print(average_accuracy)
         total_score = (average_accuracy + average_recall + average_precision) / 3
-        return [average_accuracy, average_recall, average_precision, average_specificity, total_score]
+        return [total_score, average_accuracy, average_recall, average_precision, average_specificity]
     
     
 class Metric_Manager_Normal(Metric_Manager):

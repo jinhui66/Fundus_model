@@ -232,7 +232,7 @@ if __name__ == '__main__':
         ])
     }
     # data_dir = "/data3/wangchangmiao/jinhui/eye/result_seg"
-    data_dir = "/data3/wangchangmiao/jinhui/eye/Enhanced"
+    data_dir = "/data3/wangchangmiao/jinhui/eye/ietk_Enhanced"
     # 初始化自定义数据集
     dataset = DoubleEyesDataset(csv_file="./data/double_valid_data.csv",
                             img_prefix=args.data_dir,
