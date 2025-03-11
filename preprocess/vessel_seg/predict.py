@@ -76,12 +76,12 @@ def process_image(model, img_path, output_dir, device):
         print(f"Saved result for {img_path} to {result_path}")
 
 
-def main():
+def predict(input_dir, output_dir):
     weights_path = "./save_weights/best_model.pth"
 
-    input_dir = r"/data3/wangchangmiao/jinhui/eye/Enhanced"   # 文件夹中包含待推理的图像
-    #input_dir = "./images"
-    output_dir = "/data3/wangchangmiao/jinhui/eye/vessel_enhanced"  # 存放推理结果
+    # input_dir = r"/data3/wangchangmiao/jinhui/eye/Enhanced"   # 文件夹中包含待推理的图像
+    # #input_dir = "./images"
+    # output_dir = "/data3/wangchangmiao/jinhui/eye/vessel_enhanced"  # 存放推理结果
 
     # 检查文件夹和模型文件是否存在
     assert os.path.exists(weights_path), f"weights {weights_path} not found."
@@ -106,7 +106,3 @@ def main():
         if img_filename.lower().endswith(('.tif', '.png', '.jpg', '.jpeg')):
             print(f"Processing image: {img_path}")
             process_image(model, img_path, output_dir, device)
-
-
-if __name__ == '__main__':
-    main()

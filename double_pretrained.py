@@ -23,10 +23,9 @@ from tqdm import tqdm
 from Dataset import DoubleEyesDataset, DoubleTransformedSubset
 from utils.metrics import Metric_Manager_Normal
 from sklearn.model_selection import StratifiedKFold, KFold
-from model import *
+from model.DoublePretrained import DoubleImageModel7Class
 import numpy as np
 from model.DoubleResnet import DoubleResNet
-from model.DoublePretrained import DoublePretrained
 
 
 def to0_1(tensor):
@@ -65,21 +64,21 @@ def k_fold_cross_validation(device, eyes_dataset, epochs, k_fold=5,
         train_dataloader = torch.utils.data.DataLoader(dataset=train_dataset, batch_size=batch_size, shuffle=True)
         eval_dataloader = torch.utils.data.DataLoader(dataset=val_dataset, batch_size=batch_size, shuffle=False)
         
-        # X = torch.zeros(7)
-        # Count = 0
-        # for (_, _, labels) in train_dataloader:
-        #     X += torch.sum(labels[:, 1:],dim=0)
-        #     Count += labels.shape[0]
-        #     # break
-        #     # print(X, Count)
-        # # X = torch.tensor([100., 100., 100., 100., 100., 100., 100.])
-        # print("各疾病总数:", X, Count)
-        # X = Count / X - 1
-        # print("各疾病损失权重:", X)
-        X = torch.tensor([ 4.7388, 12.5706, 12.4128, 17.0234, 33.4328, 14.9103,  2.0760])
+        X = torch.zeros(7)
+        Count = 0
+        for (_, _, labels) in train_dataloader:
+            X += torch.sum(labels[:, 1:],dim=0)
+            Count += labels.shape[0]
+            # break
+            # print(X, Count)
+        # X = torch.tensor([100., 100., 100., 100., 100., 100., 100.])
+        print("各疾病总数:", X, Count)
+        X = Count / X - 1
+        print("各疾病损失权重:", X)
+        # X = torch.tensor([ 4.7388, 12.5706, 12.4128, 17.0234, 33.4328, 14.9103,  2.0760])
         loss_fn = nn.BCEWithLogitsLoss(pos_weight=X).to(device)  # 损失函数
 
-        model = DoublePretrained(num_classes=7, pretrained_path=args.pretrainedModelPath, pretrained=True).to(device)
+        model = DoubleImageModel7Class(num_classes=7, pretrained_path=args.pretrainedModelPath).to(device)
         
         
         optimizer = torch.optim.Adam(model.parameters(), lr=args.learning_rate, weight_decay=1e-7, betas=(0.9, 0.98))
@@ -120,9 +119,9 @@ def k_fold_cross_validation(device, eyes_dataset, epochs, k_fold=5,
             # total_score = score[0]
             total_train_loss /= len(train_index)
 
-            print(f"Epoch [{e}/{epochs}]: train_loss={total_train_loss:.3f}, accuracy={train_accuracy}, recall={train_recall}, precision={train_precision}, specificity={train_specificity}, score={score}")
+            print(f"Epoch [{e}/{epochs}]: train_loss={total_train_loss:.3f}, accuracy={train_accuracy}, recall={train_recall}, precision={train_precision}, specificity={train_specificity}, train_score={score}")
             if e % print_freq == 0:
-                output_result = f"Epoch [{e}/{epochs}]: \n train_loss={total_train_loss:.3f}, \n accuracy={train_accuracy}, \n recall={train_recall}, \n precision={train_precision}, \n specificity={train_specificity}, \n score:{score}"
+                output_result = f"Epoch [{e}/{epochs}]: \n train_loss={total_train_loss:.3f}, \n accuracy={train_accuracy}, \n recall={train_recall}, \n precision={train_precision}, \n specificity={train_specificity}, \n train_score:{score}"
 
                 # 将完整的字符串写入文件
                 with open(otuput_file, 'a') as f:
@@ -154,16 +153,16 @@ def k_fold_cross_validation(device, eyes_dataset, epochs, k_fold=5,
 
                 total_eval_loss /= len(test_index)
 
-            if total_score < best_score:
+            if total_score > best_score:
                 best_score = total_score
                 best_epoch = e
                 torch.save(model.state_dict(), f'./checkpoint/pretrained{fold}.pth')
 
                 
-            print(f"Epoch [{e}/{epochs}]: val_loss={total_eval_loss:.3f}, accuracy={valid_accuracy}, recall={valid_recall}, precision={valid_precision}, specificity={valid_specificity}, score={score}")
+            print(f"Epoch [{e}/{epochs}]: val_loss={total_eval_loss:.3f}, accuracy={valid_accuracy}, recall={valid_recall}, precision={valid_precision}, specificity={valid_specificity}, val_score={score}")
             
             if e % print_freq == 0:
-                output_result = f"Epoch [{e}/{epochs}]: \n val_loss={total_eval_loss:.3f}, \n accuracy={valid_accuracy}, \n recall={valid_recall}, \n precision={valid_precision}, \n specificity={valid_specificity}, \n score={score} \n"
+                output_result = f"Epoch [{e}/{epochs}]: \n val_loss={total_eval_loss:.3f}, \n accuracy={valid_accuracy}, \n recall={valid_recall}, \n precision={valid_precision}, \n specificity={valid_specificity}, \n val_score={score} \n"
 
                 # 将完整的字符串写入文件
                 with open(otuput_file, 'a') as f:
@@ -198,8 +197,8 @@ if __name__ == '__main__':
         device = torch.device("cpu")
 
     # Define transforms for each dataset separately
-    mean = [0,0,0]
-    std = [1,1,1]
+    mean = [0.5,0.5,0.5]
+    std = [0.5,0.5,0.5]
     image_size = args.Image_size
 
     train_validation_test_transform={
@@ -207,7 +206,7 @@ if __name__ == '__main__':
         transforms.Resize((image_size, image_size)),
         transforms.RandomHorizontalFlip(0.5),
         transforms.RandomRotation(45),
-        # transforms.RandomAdjustSharpness(1.3, 1),
+        transforms.RandomAdjustSharpness(1.3, 1),
         transforms.ToTensor(),
         transforms.Normalize(mean, std)
         ]),
@@ -222,7 +221,8 @@ if __name__ == '__main__':
         transforms.Normalize(mean, std)
         ])
     }
-    data_dir = "/data3/wangchangmiao/jinhui/eye/image_without_vessel"
+    
+    data_dir = "/data3/wangchangmiao/jinhui/eye/Enhanced"
     # 初始化自定义数据集
     dataset = DoubleEyesDataset(csv_file="./data/double_valid_data.csv",
                             img_prefix=data_dir,
@@ -232,9 +232,9 @@ if __name__ == '__main__':
     model_dir = args.checkpoint_dir
     Path(model_dir).mkdir(parents=True, exist_ok=True)
     # 训练的总轮数
-    EPOCH = 500
+    EPOCH = 100
     epoch = 0
-    otuput_file = "double_pretrained4.txt"
+    otuput_file = "double_pretrained.txt"
     k_fold_cross_validation(device, dataset, EPOCH, k_fold=args.k_split_value,
                             batch_size=args.batch_size, workers=2, print_freq=1, checkpoint_dir=model_dir,
                             best_result_model_path="model", total_transform=train_validation_test_transform)

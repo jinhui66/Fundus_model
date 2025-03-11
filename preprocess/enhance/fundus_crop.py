@@ -231,9 +231,8 @@ def my_preprocess(img_source, crop_size, train_or_valid='train', img_file_dest=N
 #         return cv2.flip(image, 1)  # 1表示水平翻转
 #     return None
 
-if __name__ == '__main__':
-    input_dir = '/data3/wangchangmiao/jinhui/eye/Training_Dataset'  
-    output_dir = '/data3/wangchangmiao/jinhui/eye/Enhanced'
+def fundus_crop(input_dir, output_dir):
+
     crop_size = 256
 
     # 确保输出目录存在

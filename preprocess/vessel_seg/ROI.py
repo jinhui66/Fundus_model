@@ -71,11 +71,11 @@ def batch_process_images(input_dir, output_dir, method='threshold'):
 
 
 # 示例用法
-if __name__ == '__main__':
-    # 输入图像文件夹路径
-    input_dir = "/data3/wangchangmiao/jinhui/eye/Enhanced"  # 替换为你的图像文件夹路径
-    # 输出掩码文件夹路径
-    output_dir = "/data3/wangchangmiao/jinhui/eye/ROI" # 替换为你想保存掩码的文件夹路径
+def ROI(input_dir, output_dir):
+    # # 输入图像文件夹路径
+    # input_dir = "/data3/wangchangmiao/jinhui/eye/Enhanced"  # 替换为你的图像文件夹路径
+    # # 输出掩码文件夹路径
+    # output_dir = "/data3/wangchangmiao/jinhui/eye/ROI" # 替换为你想保存掩码的文件夹路径
 
     # 选择生成掩码的方法：'threshold' 或 'edge'
     method = 'threshold'  # 或者 'edge'

@@ -9,9 +9,9 @@ else:
     device = torch.device("cpu")
 
 class DoubleResNetShared(nn.Module):
-    def __init__(self, num_classes=8, include_top=True):
+    def __init__(self, num_classes=7, input_channels=3, include_top=True):
         super(DoubleResNetShared, self).__init__()
-        self.left_road = EyeNet(num_classes=num_classes)
+        self.left_road = EyeNet(num_classes=num_classes, input_channels=input_channels)
         self.right_road = self.left_road
         self.fc1 = nn.Linear(2 * num_classes, 100)
         self.fc2 = nn.Linear(100, num_classes)
@@ -26,11 +26,11 @@ class DoubleResNetShared(nn.Module):
         return z
     
 class EyeNet(nn.Module):
-    def __init__(self, num_classes=7):
+    def __init__(self, num_classes=7, input_channels=3):
         super(EyeNet, self).__init__()
         self.num_classes = num_classes
-        self.feature_net = ResNet(block=BasicBlock, block_num=[2, 2, 2, 2], num_classes=num_classes, include_top=False)
-        self.classify = nn.ModuleList([ResNet(block=BasicBlock, block_num=[2, 2, 2, 2], input_channels=128, num_classes=1, include_top=True) for _ in range(num_classes)])
+        self.feature_net = ResNet(block=BasicBlock, block_num=[2, 2, 2, 2], num_classes=num_classes, input_channels=input_channels, include_top=False)
+        self.classify = nn.ModuleList([ResNet(block=BasicBlock, block_num=[2, 2, 2, 2], num_classes=1, input_channels=input_channels, include_top=True) for _ in range(num_classes)])
     
     def forward(self, x):
         x = self.feature_net(x)

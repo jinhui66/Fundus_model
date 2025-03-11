@@ -73,11 +73,11 @@ def process_image(model, img_path, roi_mask_path, output_dir, device):
         print(f"Saved result for {img_path} to {result_path}")
 
 
-def main():
+def rest(input_dir, roi_mask_dir, output_dir):
     weights_path = "./save_weights/best_model.pth"
-    input_dir = "/data3/wangchangmiao/jinhui/eye/Enhanced"  # 文件夹中包含待推理的图像
-    roi_mask_dir = "/data3/wangchangmiao/jinhui/eye/ROI"  # 文件夹中包含掩码图像
-    output_dir = "/data3/wangchangmiao/jinhui/eye/image_without_vessel"  # 存放去除血管后的图像
+    # input_dir = "/data3/wangchangmiao/jinhui/eye/Enhanced"  # 文件夹中包含待推理的图像
+    # roi_mask_dir = "/data3/wangchangmiao/jinhui/eye/ROI"  # 文件夹中包含掩码图像
+    # output_dir = "/data3/wangchangmiao/jinhui/eye/image_without_vessel"  # 存放去除血管后的图像
 
     # 检查文件夹和模型文件是否存在
     assert os.path.exists(weights_path), f"weights {weights_path} not found."
@@ -108,6 +108,3 @@ def main():
             else:
                 print(f"Warning: No ROI mask found for {img_path}. Skipping this image.")
 
-
-if __name__ == '__main__':
-    main()
