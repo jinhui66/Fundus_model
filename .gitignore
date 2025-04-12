@@ -1,5 +1,6 @@
 *.pyc
 *.pth
+*.pt
 *.out
 *.txt
 *.gitignore

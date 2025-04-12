@@ -81,13 +81,21 @@ class Metric_Manager:
         return self.accuracy, self.recall, self.precision, self.specificity
     
     def compute_score(self):
-        average_accuracy = (np.sum(self.TP) + np.sum(self.TN)) / (np.sum(self.TP) + np.sum(self.TN) + np.sum(self.FP) + np.sum(self.FN))
-        average_recall = np.sum(self.TP) / (np.sum(self.TP) + np.sum(self.FN))
-        average_precision = np.sum(self.TP) / (np.sum(self.TP) + np.sum(self.FP))
-        average_specificity = np.sum(self.TN) / (np.sum(self.TN) + np.sum(self.FP))
+        total_TP = np.sum(self.TP[1:])
+        total_TN = np.sum(self.TN[1:])
+        total_FP = np.sum(self.FP[1:])
+        total_FN = np.sum(self.FN[1:])
+        average_accuracy = (total_TP + total_TN) / (total_TP + total_TN + total_FP + total_FN)
+        average_recall = total_TP / (total_TP + total_FN)
+        average_precision = total_TP / (total_TP + total_FP)
+        average_specificity = total_TN / (total_TN + total_FP)
+        
         # print(average_accuracy)
         total_score = (average_accuracy + average_recall + average_precision) / 3
         return [total_score, average_accuracy, average_recall, average_precision, average_specificity]
+    
+    def get_matrix(self):
+        return self.TP, self.TN, self.FP, self.FN
     
     
 class Metric_Manager_Normal(Metric_Manager):
