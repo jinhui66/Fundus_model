@@ -9,7 +9,11 @@ def parse_args():
                                                                      '1 for MNIST, 2 for CIFAR10, 3 for Custom Dataset')
     parser.add_argument('--Image_size', type=int, default=256, help='Size to reshape image')
     parser.add_argument('--checkpoint_dir', type=str, default='./result', help='Path to save model')
+<<<<<<< HEAD
     parser.add_argument('--batch_size', type=int, default=16, help='Batch size')
+=======
+    parser.add_argument('--batch_size', type=int, default=8, help='Batch size')
+>>>>>>> b8e555d1b03178cb7d874d80f1e99764ed757a49
     parser.add_argument('--learning_rate', type=float, default=1e-4, help='Learning rate')
     parser.add_argument('--epochs', type=int, default=50, help='Number of Epoch')
     parser.add_argument('--optimizer', type=str, default='SGD', help='Optimizer to use')

@@ -292,10 +292,17 @@ if __name__ == '__main__':
     
     data_dir = "/data3/wangchangmiao/jinhui/DATA/fundus/Enhanced"
     # 初始化自定义数据集
+<<<<<<< HEAD:RET-CLIP-MOE.py
     dataset = DoubleEyesDataset(csv_file="./data/double_valid_data.csv",
                             img_prefix=data_dir,
                             transform=None,
                             if_text=True)
+=======
+    data_dir = "/data3/wangchangmiao/jinhui/eye/image_without_vessel"
+    dataset = CombineEyesDataset(csv_file="./data/double_valid_data.csv",
+                            img_prefix=data_dir,
+                            transform=None)
+>>>>>>> b8e555d1b03178cb7d874d80f1e99764ed757a49:double_combine.py
 
     # 定义模型保存的文件夹
     model_dir = args.checkpoint_dir
@@ -303,7 +310,11 @@ if __name__ == '__main__':
     # 训练的总轮数
     EPOCH = 500
     epoch = 0
+<<<<<<< HEAD:RET-CLIP-MOE.py
     otuput_file = "Final.txt"
+=======
+    otuput_file = "double_combine2.txt"
+>>>>>>> b8e555d1b03178cb7d874d80f1e99764ed757a49:double_combine.py
     k_fold_cross_validation(device, dataset, EPOCH, k_fold=args.k_split_value,
                             batch_size=args.batch_size, workers=2, print_freq=1, checkpoint_dir=model_dir,
                             best_result_model_path="model", total_transform=train_validation_test_transform)
